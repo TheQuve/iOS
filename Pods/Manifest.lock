@@ -1,0 +1,33 @@
+PODS:
+  - GoogleWebRTC (1.1.25935)
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
+  - Starscream (3.0.6)
+
+DEPENDENCIES:
+  - GoogleWebRTC
+  - RxCocoa
+  - RxSwift
+  - Starscream
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GoogleWebRTC
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
+    - Starscream
+
+SPEC CHECKSUMS:
+  GoogleWebRTC: 10e895a5bb38638782536044541217c1c571a5c5
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+
+PODFILE CHECKSUM: b50fc28a66ba9c0a02b242235f4128ec5e127a81
+
+COCOAPODS: 1.5.3

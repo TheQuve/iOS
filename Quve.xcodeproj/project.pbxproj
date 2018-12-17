@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29C3E4FEE231F377D33BA221 /* Pods_QuveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514C18440FCE1754FE193BFE /* Pods_QuveTests.framework */; };
 		BC3896D321BB5FF0003328E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3896D221BB5FF0003328E7 /* AppDelegate.swift */; };
-		BC3896D521BB5FF0003328E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3896D421BB5FF0003328E7 /* ViewController.swift */; };
+		BC3896D521BB5FF0003328E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3896D421BB5FF0003328E7 /* HomeViewController.swift */; };
 		BC3896D821BB5FF0003328E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3896D621BB5FF0003328E7 /* Main.storyboard */; };
 		BC3896DB21BB5FF0003328E7 /* Quve.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC3896D921BB5FF0003328E7 /* Quve.xcdatamodeld */; };
 		BC3896DD21BB5FF3003328E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3896DC21BB5FF3003328E7 /* Assets.xcassets */; };
 		BC3896E021BB5FF3003328E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3896DE21BB5FF3003328E7 /* LaunchScreen.storyboard */; };
 		BC3896EB21BB5FF3003328E7 /* QuveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3896EA21BB5FF3003328E7 /* QuveTests.swift */; };
 		BC3896F621BB5FF3003328E7 /* QuveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3896F521BB5FF3003328E7 /* QuveUITests.swift */; };
+		BC66A5ED21C428D100E1C83B /* SignalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66A5EC21C428D100E1C83B /* SignalClient.swift */; };
+		BC66A5F221C42AC600E1C83B /* RTCIceCandidate+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66A5EF21C42AC500E1C83B /* RTCIceCandidate+JSON.swift */; };
+		BC66A5F321C42AC600E1C83B /* RTCSessionDescription+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66A5F021C42AC500E1C83B /* RTCSessionDescription+JSON.swift */; };
+		BC66A5F421C42AC600E1C83B /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66A5F121C42AC600E1C83B /* RTCStates.swift */; };
+		BC66A5FE21C4D67E00E1C83B /* Spoqa Han Sans Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC66A5FA21C4D67A00E1C83B /* Spoqa Han Sans Regular.ttf */; };
+		BC66A5FF21C4D67E00E1C83B /* Spoqa Han Sans Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC66A5FB21C4D67B00E1C83B /* Spoqa Han Sans Bold.ttf */; };
+		BC66A60021C4D67E00E1C83B /* Spoqa Han Sans Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC66A5FC21C4D67C00E1C83B /* Spoqa Han Sans Light.ttf */; };
+		BC66A60121C4D67E00E1C83B /* Spoqa Han Sans Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC66A5FD21C4D67E00E1C83B /* Spoqa Han Sans Thin.ttf */; };
+		BC66A60321C4D6A000E1C83B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66A60221C4D6A000E1C83B /* HomeViewModel.swift */; };
+		BC66A60621C4DCD600E1C83B /* HomeCollectionListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC66A60521C4DCD600E1C83B /* HomeCollectionListView.xib */; };
+		BCB6C97921C4076700BCEDC2 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */; };
+		D5255EC72785D2F851879E8E /* Pods_Quve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624498FAE0C86C3E0A921E3C /* Pods_Quve.framework */; };
+		E699D9B5074127FBF728DD01 /* Pods_QuveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA000ABDB36D17DC099AC9F /* Pods_QuveUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20CB72FA58F7DB0F4718E830 /* Pods-QuveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuveTests/Pods-QuveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		514C18440FCE1754FE193BFE /* Pods_QuveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		624498FAE0C86C3E0A921E3C /* Pods_Quve.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quve.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CABE4D3B7399A2CBC58B65 /* Pods-QuveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuveUITests/Pods-QuveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B979730501BFEE3045B7CABE /* Pods-Quve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quve.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quve/Pods-Quve.debug.xcconfig"; sourceTree = "<group>"; };
+		B9EBAAB51E772530D88416A9 /* Pods-Quve.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quve.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quve/Pods-Quve.release.xcconfig"; sourceTree = "<group>"; };
 		BC3896CF21BB5FF0003328E7 /* Quve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC3896D221BB5FF0003328E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC3896D421BB5FF0003328E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC3896D421BB5FF0003328E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BC3896D721BB5FF0003328E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC3896DA21BB5FF0003328E7 /* Quve.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quve.xcdatamodel; sourceTree = "<group>"; };
 		BC3896DC21BB5FF3003328E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +69,21 @@
 		BC3896F121BB5FF3003328E7 /* QuveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC3896F521BB5FF3003328E7 /* QuveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuveUITests.swift; sourceTree = "<group>"; };
 		BC3896F721BB5FF3003328E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC66A5EC21C428D100E1C83B /* SignalClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalClient.swift; sourceTree = "<group>"; };
+		BC66A5EF21C42AC500E1C83B /* RTCIceCandidate+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RTCIceCandidate+JSON.swift"; sourceTree = "<group>"; };
+		BC66A5F021C42AC500E1C83B /* RTCSessionDescription+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RTCSessionDescription+JSON.swift"; sourceTree = "<group>"; };
+		BC66A5F121C42AC600E1C83B /* RTCStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
+		BC66A5FA21C4D67A00E1C83B /* Spoqa Han Sans Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Regular.ttf"; sourceTree = "<group>"; };
+		BC66A5FB21C4D67B00E1C83B /* Spoqa Han Sans Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Bold.ttf"; sourceTree = "<group>"; };
+		BC66A5FC21C4D67C00E1C83B /* Spoqa Han Sans Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Light.ttf"; sourceTree = "<group>"; };
+		BC66A5FD21C4D67E00E1C83B /* Spoqa Han Sans Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Thin.ttf"; sourceTree = "<group>"; };
+		BC66A60221C4D6A000E1C83B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BC66A60521C4DCD600E1C83B /* HomeCollectionListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionListView.xib; sourceTree = "<group>"; };
+		BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		BCB6C97A21C4082800BCEDC2 /* Quve-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quve-Bridging-Header.h"; sourceTree = "<group>"; };
+		C5481CD9CD6EFA5C4B32869E /* Pods-QuveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuveUITests/Pods-QuveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CBA000ABDB36D17DC099AC9F /* Pods_QuveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E435FD19DAF05466CCFE99B9 /* Pods-QuveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuveTests/Pods-QuveTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5255EC72785D2F851879E8E /* Pods_Quve.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C3E4FEE231F377D33BA221 /* Pods_QuveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +107,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E699D9B5074127FBF728DD01 /* Pods_QuveUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86376752BA5D2626216E2DC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				624498FAE0C86C3E0A921E3C /* Pods_Quve.framework */,
+				514C18440FCE1754FE193BFE /* Pods_QuveTests.framework */,
+				CBA000ABDB36D17DC099AC9F /* Pods_QuveUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC3896C621BB5FF0003328E7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +131,8 @@
 				BC3896E921BB5FF3003328E7 /* QuveTests */,
 				BC3896F421BB5FF3003328E7 /* QuveUITests */,
 				BC3896D021BB5FF0003328E7 /* Products */,
+				CBABAB2A180209D7F4A1BFA5 /* Pods */,
+				86376752BA5D2626216E2DC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +149,21 @@
 		BC3896D121BB5FF0003328E7 /* Quve */ = {
 			isa = PBXGroup;
 			children = (
+				BC66A60421C4D88D00E1C83B /* View */,
+				BC66A5F921C4D65F00E1C83B /* Font */,
+				BC66A5EE21C42A7100E1C83B /* RTCExtension */,
+				BCB6C97521C3FF5600BCEDC2 /* Model */,
+				BCB6C97621C3FF5B00BCEDC2 /* ViewModel */,
+				BCB6C97721C3FF6000BCEDC2 /* Controller */,
 				BC3896D221BB5FF0003328E7 /* AppDelegate.swift */,
-				BC3896D421BB5FF0003328E7 /* ViewController.swift */,
 				BC3896D621BB5FF0003328E7 /* Main.storyboard */,
 				BC3896DC21BB5FF3003328E7 /* Assets.xcassets */,
 				BC3896DE21BB5FF3003328E7 /* LaunchScreen.storyboard */,
 				BC3896E121BB5FF3003328E7 /* Info.plist */,
 				BC3896D921BB5FF0003328E7 /* Quve.xcdatamodeld */,
+				BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */,
+				BC66A5EC21C428D100E1C83B /* SignalClient.swift */,
+				BCB6C97A21C4082800BCEDC2 /* Quve-Bridging-Header.h */,
 			);
 			path = Quve;
 			sourceTree = "<group>";
@@ -128,6 +186,71 @@
 			path = QuveUITests;
 			sourceTree = "<group>";
 		};
+		BC66A5EE21C42A7100E1C83B /* RTCExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BC66A5EF21C42AC500E1C83B /* RTCIceCandidate+JSON.swift */,
+				BC66A5F021C42AC500E1C83B /* RTCSessionDescription+JSON.swift */,
+				BC66A5F121C42AC600E1C83B /* RTCStates.swift */,
+			);
+			path = RTCExtension;
+			sourceTree = "<group>";
+		};
+		BC66A5F921C4D65F00E1C83B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BC66A5FB21C4D67B00E1C83B /* Spoqa Han Sans Bold.ttf */,
+				BC66A5FC21C4D67C00E1C83B /* Spoqa Han Sans Light.ttf */,
+				BC66A5FA21C4D67A00E1C83B /* Spoqa Han Sans Regular.ttf */,
+				BC66A5FD21C4D67E00E1C83B /* Spoqa Han Sans Thin.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		BC66A60421C4D88D00E1C83B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC66A60521C4DCD600E1C83B /* HomeCollectionListView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCB6C97521C3FF5600BCEDC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCB6C97621C3FF5B00BCEDC2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC66A60221C4D6A000E1C83B /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BCB6C97721C3FF6000BCEDC2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC3896D421BB5FF0003328E7 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBABAB2A180209D7F4A1BFA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B979730501BFEE3045B7CABE /* Pods-Quve.debug.xcconfig */,
+				B9EBAAB51E772530D88416A9 /* Pods-Quve.release.xcconfig */,
+				20CB72FA58F7DB0F4718E830 /* Pods-QuveTests.debug.xcconfig */,
+				E435FD19DAF05466CCFE99B9 /* Pods-QuveTests.release.xcconfig */,
+				76CABE4D3B7399A2CBC58B65 /* Pods-QuveUITests.debug.xcconfig */,
+				C5481CD9CD6EFA5C4B32869E /* Pods-QuveUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC3896FA21BB5FF3003328E7 /* Build configuration list for PBXNativeTarget "Quve" */;
 			buildPhases = (
+				E9CAE81ECE67ADC1C3672083 /* [CP] Check Pods Manifest.lock */,
 				BC3896CB21BB5FF0003328E7 /* Sources */,
 				BC3896CC21BB5FF0003328E7 /* Frameworks */,
 				BC3896CD21BB5FF0003328E7 /* Resources */,
+				FCCF95B7A1D132DFBB2099FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC3896FD21BB5FF3003328E7 /* Build configuration list for PBXNativeTarget "QuveTests" */;
 			buildPhases = (
+				92B3274D83E757BC0874EA39 /* [CP] Check Pods Manifest.lock */,
 				BC3896E221BB5FF3003328E7 /* Sources */,
 				BC3896E321BB5FF3003328E7 /* Frameworks */,
 				BC3896E421BB5FF3003328E7 /* Resources */,
@@ -170,6 +296,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC38970021BB5FF3003328E7 /* Build configuration list for PBXNativeTarget "QuveUITests" */;
 			buildPhases = (
+				18E6E49D6EB6067A66CAD44E /* [CP] Check Pods Manifest.lock */,
 				BC3896ED21BB5FF3003328E7 /* Sources */,
 				BC3896EE21BB5FF3003328E7 /* Frameworks */,
 				BC3896EF21BB5FF3003328E7 /* Resources */,
@@ -196,6 +323,7 @@
 				TargetAttributes = {
 					BC3896CE21BB5FF0003328E7 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					BC3896E521BB5FF3003328E7 = {
 						CreatedOnToolsVersion = 10.0;
@@ -232,9 +360,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC66A5FE21C4D67E00E1C83B /* Spoqa Han Sans Regular.ttf in Resources */,
 				BC3896E021BB5FF3003328E7 /* LaunchScreen.storyboard in Resources */,
+				BC66A60121C4D67E00E1C83B /* Spoqa Han Sans Thin.ttf in Resources */,
+				BC66A60021C4D67E00E1C83B /* Spoqa Han Sans Light.ttf in Resources */,
+				BC66A5FF21C4D67E00E1C83B /* Spoqa Han Sans Bold.ttf in Resources */,
 				BC3896DD21BB5FF3003328E7 /* Assets.xcassets in Resources */,
 				BC3896D821BB5FF0003328E7 /* Main.storyboard in Resources */,
+				BC66A60621C4DCD600E1C83B /* HomeCollectionListView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +387,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18E6E49D6EB6067A66CAD44E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuveUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92B3274D83E757BC0874EA39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuveTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9CAE81ECE67ADC1C3672083 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quve-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCCF95B7A1D132DFBB2099FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Quve/Pods-Quve-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quve/Pods-Quve-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC3896CB21BB5FF0003328E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC3896D521BB5FF0003328E7 /* ViewController.swift in Sources */,
+				BC3896D521BB5FF0003328E7 /* HomeViewController.swift in Sources */,
+				BC66A60321C4D6A000E1C83B /* HomeViewModel.swift in Sources */,
 				BC3896DB21BB5FF0003328E7 /* Quve.xcdatamodeld in Sources */,
 				BC3896D321BB5FF0003328E7 /* AppDelegate.swift in Sources */,
+				BC66A5ED21C428D100E1C83B /* SignalClient.swift in Sources */,
+				BCB6C97921C4076700BCEDC2 /* WebRTCClient.swift in Sources */,
+				BC66A5F321C42AC600E1C83B /* RTCSessionDescription+JSON.swift in Sources */,
+				BC66A5F221C42AC600E1C83B /* RTCIceCandidate+JSON.swift in Sources */,
+				BC66A5F421C42AC600E1C83B /* RTCStates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,10 +672,13 @@
 		};
 		BC3896FB21BB5FF3003328E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B979730501BFEE3045B7CABE /* Pods-Quve.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86PPC52X64;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Quve/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,17 +686,22 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SungJoonPark.Quve;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quve/Quve-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BC3896FC21BB5FF3003328E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EBAAB51E772530D88416A9 /* Pods-Quve.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86PPC52X64;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Quve/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,13 +709,15 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SungJoonPark.Quve;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quve/Quve-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		BC3896FE21BB5FF3003328E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CB72FA58F7DB0F4718E830 /* Pods-QuveTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +739,7 @@
 		};
 		BC3896FF21BB5FF3003328E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E435FD19DAF05466CCFE99B9 /* Pods-QuveTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +761,7 @@
 		};
 		BC38970121BB5FF3003328E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76CABE4D3B7399A2CBC58B65 /* Pods-QuveUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +782,7 @@
 		};
 		BC38970221BB5FF3003328E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5481CD9CD6EFA5C4B32869E /* Pods-QuveUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

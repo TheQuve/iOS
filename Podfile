@@ -6,6 +6,10 @@ target 'Quve' do
   use_frameworks!
 
   # Pods for Quve
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'GoogleWebRTC'
+  pod 'Starscream'
 
   target 'QuveTests' do
     inherit! :search_paths
