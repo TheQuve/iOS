@@ -10,6 +10,7 @@ target 'Quve' do
   pod 'RxCocoa'
   pod 'GoogleWebRTC'
   pod 'Starscream'
+  pod 'XLPagerTabStrip'
 
   target 'QuveTests' do
     inherit! :search_paths

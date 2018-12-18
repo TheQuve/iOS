@@ -6,12 +6,14 @@ PODS:
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
   - Starscream (3.0.6)
+  - XLPagerTabStrip (8.1.0)
 
 DEPENDENCIES:
   - GoogleWebRTC
   - RxCocoa
   - RxSwift
   - Starscream
+  - XLPagerTabStrip
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -20,6 +22,7 @@ SPEC REPOS:
     - RxCocoa
     - RxSwift
     - Starscream
+    - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   GoogleWebRTC: 10e895a5bb38638782536044541217c1c571a5c5
@@ -27,7 +30,8 @@ SPEC CHECKSUMS:
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+  XLPagerTabStrip: 22d4c58200d7c105e0e407ab6bfd01a5d85014be
 
-PODFILE CHECKSUM: b50fc28a66ba9c0a02b242235f4128ec5e127a81
+PODFILE CHECKSUM: 5200cb6614b4cf7ff0b231d502cab99aab532365
 
 COCOAPODS: 1.5.3

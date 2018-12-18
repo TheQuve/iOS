@@ -20,12 +20,13 @@
 		BC66A5F221C42AC600E1C83B /* RTCIceCandidate+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66A5EF21C42AC500E1C83B /* RTCIceCandidate+JSON.swift */; };
 		BC66A5F321C42AC600E1C83B /* RTCSessionDescription+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66A5F021C42AC500E1C83B /* RTCSessionDescription+JSON.swift */; };
 		BC66A5F421C42AC600E1C83B /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66A5F121C42AC600E1C83B /* RTCStates.swift */; };
-		BC66A5FE21C4D67E00E1C83B /* Spoqa Han Sans Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC66A5FA21C4D67A00E1C83B /* Spoqa Han Sans Regular.ttf */; };
-		BC66A5FF21C4D67E00E1C83B /* Spoqa Han Sans Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC66A5FB21C4D67B00E1C83B /* Spoqa Han Sans Bold.ttf */; };
-		BC66A60021C4D67E00E1C83B /* Spoqa Han Sans Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC66A5FC21C4D67C00E1C83B /* Spoqa Han Sans Light.ttf */; };
-		BC66A60121C4D67E00E1C83B /* Spoqa Han Sans Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC66A5FD21C4D67E00E1C83B /* Spoqa Han Sans Thin.ttf */; };
-		BC66A60321C4D6A000E1C83B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66A60221C4D6A000E1C83B /* HomeViewModel.swift */; };
-		BC66A60621C4DCD600E1C83B /* HomeCollectionListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC66A60521C4DCD600E1C83B /* HomeCollectionListView.xib */; };
+		BC66A5FE21C4D67E00E1C83B /* SpoqaHanSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC66A5FA21C4D67A00E1C83B /* SpoqaHanSans-Regular.ttf */; };
+		BC66A5FF21C4D67E00E1C83B /* SpoqaHanSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC66A5FB21C4D67B00E1C83B /* SpoqaHanSans-Bold.ttf */; };
+		BC66A60021C4D67E00E1C83B /* SpoqaHanSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC66A5FC21C4D67C00E1C83B /* SpoqaHanSans-Light.ttf */; };
+		BC66A60121C4D67E00E1C83B /* SpoqaHanSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC66A5FD21C4D67E00E1C83B /* SpoqaHanSans-Thin.ttf */; };
+		BC6EF58C21C7BAEB003456FB /* HomeCollectionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EF58A21C7BAEB003456FB /* HomeCollectionListCell.swift */; };
+		BC6EF58D21C7BAEB003456FB /* HomeCollectionListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6EF58B21C7BAEB003456FB /* HomeCollectionListCell.xib */; };
+		BC6EF58F21C7C5D9003456FB /* HomeChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EF58E21C7C5D9003456FB /* HomeChildViewController.swift */; };
 		BCB6C97921C4076700BCEDC2 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */; };
 		D5255EC72785D2F851879E8E /* Pods_Quve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624498FAE0C86C3E0A921E3C /* Pods_Quve.framework */; };
 		E699D9B5074127FBF728DD01 /* Pods_QuveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA000ABDB36D17DC099AC9F /* Pods_QuveUITests.framework */; };
@@ -73,12 +74,13 @@
 		BC66A5EF21C42AC500E1C83B /* RTCIceCandidate+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RTCIceCandidate+JSON.swift"; sourceTree = "<group>"; };
 		BC66A5F021C42AC500E1C83B /* RTCSessionDescription+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RTCSessionDescription+JSON.swift"; sourceTree = "<group>"; };
 		BC66A5F121C42AC600E1C83B /* RTCStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
-		BC66A5FA21C4D67A00E1C83B /* Spoqa Han Sans Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Regular.ttf"; sourceTree = "<group>"; };
-		BC66A5FB21C4D67B00E1C83B /* Spoqa Han Sans Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Bold.ttf"; sourceTree = "<group>"; };
-		BC66A5FC21C4D67C00E1C83B /* Spoqa Han Sans Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Light.ttf"; sourceTree = "<group>"; };
-		BC66A5FD21C4D67E00E1C83B /* Spoqa Han Sans Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Thin.ttf"; sourceTree = "<group>"; };
-		BC66A60221C4D6A000E1C83B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		BC66A60521C4DCD600E1C83B /* HomeCollectionListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionListView.xib; sourceTree = "<group>"; };
+		BC66A5FA21C4D67A00E1C83B /* SpoqaHanSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSans-Regular.ttf"; sourceTree = "<group>"; };
+		BC66A5FB21C4D67B00E1C83B /* SpoqaHanSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSans-Bold.ttf"; sourceTree = "<group>"; };
+		BC66A5FC21C4D67C00E1C83B /* SpoqaHanSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSans-Light.ttf"; sourceTree = "<group>"; };
+		BC66A5FD21C4D67E00E1C83B /* SpoqaHanSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSans-Thin.ttf"; sourceTree = "<group>"; };
+		BC6EF58A21C7BAEB003456FB /* HomeCollectionListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionListCell.swift; sourceTree = "<group>"; };
+		BC6EF58B21C7BAEB003456FB /* HomeCollectionListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionListCell.xib; sourceTree = "<group>"; };
+		BC6EF58E21C7C5D9003456FB /* HomeChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChildViewController.swift; sourceTree = "<group>"; };
 		BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
 		BCB6C97A21C4082800BCEDC2 /* Quve-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quve-Bridging-Header.h"; sourceTree = "<group>"; };
 		C5481CD9CD6EFA5C4B32869E /* Pods-QuveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuveUITests/Pods-QuveUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,17 +151,16 @@
 		BC3896D121BB5FF0003328E7 /* Quve */ = {
 			isa = PBXGroup;
 			children = (
-				BC66A60421C4D88D00E1C83B /* View */,
+				BC3896D221BB5FF0003328E7 /* AppDelegate.swift */,
+				BC3896DC21BB5FF3003328E7 /* Assets.xcassets */,
+				BC3896E121BB5FF3003328E7 /* Info.plist */,
 				BC66A5F921C4D65F00E1C83B /* Font */,
 				BC66A5EE21C42A7100E1C83B /* RTCExtension */,
 				BCB6C97521C3FF5600BCEDC2 /* Model */,
-				BCB6C97621C3FF5B00BCEDC2 /* ViewModel */,
+				BC66A60421C4D88D00E1C83B /* View */,
 				BCB6C97721C3FF6000BCEDC2 /* Controller */,
-				BC3896D221BB5FF0003328E7 /* AppDelegate.swift */,
 				BC3896D621BB5FF0003328E7 /* Main.storyboard */,
-				BC3896DC21BB5FF3003328E7 /* Assets.xcassets */,
 				BC3896DE21BB5FF3003328E7 /* LaunchScreen.storyboard */,
-				BC3896E121BB5FF3003328E7 /* Info.plist */,
 				BC3896D921BB5FF0003328E7 /* Quve.xcdatamodeld */,
 				BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */,
 				BC66A5EC21C428D100E1C83B /* SignalClient.swift */,
@@ -199,10 +200,10 @@
 		BC66A5F921C4D65F00E1C83B /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				BC66A5FB21C4D67B00E1C83B /* Spoqa Han Sans Bold.ttf */,
-				BC66A5FC21C4D67C00E1C83B /* Spoqa Han Sans Light.ttf */,
-				BC66A5FA21C4D67A00E1C83B /* Spoqa Han Sans Regular.ttf */,
-				BC66A5FD21C4D67E00E1C83B /* Spoqa Han Sans Thin.ttf */,
+				BC66A5FD21C4D67E00E1C83B /* SpoqaHanSans-Thin.ttf */,
+				BC66A5FB21C4D67B00E1C83B /* SpoqaHanSans-Bold.ttf */,
+				BC66A5FC21C4D67C00E1C83B /* SpoqaHanSans-Light.ttf */,
+				BC66A5FA21C4D67A00E1C83B /* SpoqaHanSans-Regular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -210,7 +211,8 @@
 		BC66A60421C4D88D00E1C83B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BC66A60521C4DCD600E1C83B /* HomeCollectionListView.xib */,
+				BC6EF58A21C7BAEB003456FB /* HomeCollectionListCell.swift */,
+				BC6EF58B21C7BAEB003456FB /* HomeCollectionListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,18 +224,11 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		BCB6C97621C3FF5B00BCEDC2 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				BC66A60221C4D6A000E1C83B /* HomeViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		BCB6C97721C3FF6000BCEDC2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				BC3896D421BB5FF0003328E7 /* HomeViewController.swift */,
+				BC6EF58E21C7C5D9003456FB /* HomeChildViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -360,14 +355,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC66A5FE21C4D67E00E1C83B /* Spoqa Han Sans Regular.ttf in Resources */,
+				BC66A5FE21C4D67E00E1C83B /* SpoqaHanSans-Regular.ttf in Resources */,
 				BC3896E021BB5FF3003328E7 /* LaunchScreen.storyboard in Resources */,
-				BC66A60121C4D67E00E1C83B /* Spoqa Han Sans Thin.ttf in Resources */,
-				BC66A60021C4D67E00E1C83B /* Spoqa Han Sans Light.ttf in Resources */,
-				BC66A5FF21C4D67E00E1C83B /* Spoqa Han Sans Bold.ttf in Resources */,
+				BC66A60121C4D67E00E1C83B /* SpoqaHanSans-Thin.ttf in Resources */,
+				BC66A60021C4D67E00E1C83B /* SpoqaHanSans-Light.ttf in Resources */,
+				BC6EF58D21C7BAEB003456FB /* HomeCollectionListCell.xib in Resources */,
+				BC66A5FF21C4D67E00E1C83B /* SpoqaHanSans-Bold.ttf in Resources */,
 				BC3896DD21BB5FF3003328E7 /* Assets.xcassets in Resources */,
 				BC3896D821BB5FF0003328E7 /* Main.storyboard in Resources */,
-				BC66A60621C4DCD600E1C83B /* HomeCollectionListView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +463,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -478,6 +474,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -492,13 +489,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC3896D521BB5FF0003328E7 /* HomeViewController.swift in Sources */,
-				BC66A60321C4D6A000E1C83B /* HomeViewModel.swift in Sources */,
 				BC3896DB21BB5FF0003328E7 /* Quve.xcdatamodeld in Sources */,
 				BC3896D321BB5FF0003328E7 /* AppDelegate.swift in Sources */,
 				BC66A5ED21C428D100E1C83B /* SignalClient.swift in Sources */,
 				BCB6C97921C4076700BCEDC2 /* WebRTCClient.swift in Sources */,
 				BC66A5F321C42AC600E1C83B /* RTCSessionDescription+JSON.swift in Sources */,
+				BC6EF58C21C7BAEB003456FB /* HomeCollectionListCell.swift in Sources */,
 				BC66A5F221C42AC600E1C83B /* RTCIceCandidate+JSON.swift in Sources */,
+				BC6EF58F21C7C5D9003456FB /* HomeChildViewController.swift in Sources */,
 				BC66A5F421C42AC600E1C83B /* RTCStates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
