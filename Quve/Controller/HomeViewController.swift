@@ -26,12 +26,23 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         self.navigationController?.view.backgroundColor = .clear
         
     }
+    
+    override public var scrollPercentage: CGFloat {
+        if let tabbarHeight = tabBarController?.tabBar.frame.size.height{
+            containerView.contentOffset.y = tabbarHeight
+        }
+        return super.scrollPercentage
+    }
 
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        let child1 = HomeChildViewController(itemInfo: "떠오르는")
-        let child2 = HomeChildViewController(itemInfo: "맞춤")
-        let child3 = HomeChildViewController(itemInfo: "실시간 답변완료")
-        let child4 = HomeChildViewController(itemInfo: "지식나눔")
+        let child1 = storyboard?.instantiateViewController(withIdentifier: "HomeChildViewController") as! HomeChildViewController
+        child1.itemInfo = "떠오르는"
+        let child2 = storyboard?.instantiateViewController(withIdentifier: "HomeChildViewController") as! HomeChildViewController
+        child2.itemInfo = "맞춤"
+        let child3 = storyboard?.instantiateViewController(withIdentifier: "HomeChildViewController") as! HomeChildViewController
+        child3.itemInfo = "실시간 답변완료"
+        let child4 = storyboard?.instantiateViewController(withIdentifier: "HomeChildViewController") as! HomeChildViewController
+        child4.itemInfo = "지식나눔"
         
         let childViewController = [child1, child2, child3, child4]
         
@@ -39,6 +50,7 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
     }
     
     fileprivate func setButtonBarView() {
+        containerView.frame = self.view.bounds
         buttonBarView.removeFromSuperview()
         navigationController?.navigationBar.addSubview(buttonBarView)
         buttonBarView.selectedBar.backgroundColor = #colorLiteral(red: 0.1450980392, green: 0.8823529412, blue: 1, alpha: 1)
@@ -53,7 +65,7 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         settings.style.selectedBarHeight = 1.0
         settings.style.buttonBarItemFont = UIFont(name: "SpoqaHanSans-Bold", size: 14.0)!
     }
-    
+
     fileprivate func setCurrentButtonBarItem() {
         changeCurrentIndexProgressive = { (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             guard changeCurrentIndex == true else { return }
