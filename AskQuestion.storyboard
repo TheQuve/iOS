@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ask Question View Controller-->
+        <scene sceneID="7dx-im-Pcd">
+            <objects>
+                <viewController storyboardIdentifier="AskQuestionViewController" id="Ahk-wM-Tx3" customClass="AskQuestionViewController" customModule="Quve" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="riZ-Xq-BSI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2v3-X5-JEI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ie0-bM-Gl2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpy-Tf-7gX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2231" y="1514"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hOM-DS-wqc">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController-9hM-Q5-Cc0" automaticallyAdjustsScrollViewInsets="NO" id="9hM-Q5-Cc0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="askIcon" id="uVA-T3-8cc">
+                        <inset key="imageInsets" minX="0.0" minY="-32.5" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iiy-nR-LZb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvl-bE-bgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="1514"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="askIcon" width="80" height="80"/>
+    </resources>
+</document>
