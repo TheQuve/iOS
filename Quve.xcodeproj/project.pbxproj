@@ -27,7 +27,11 @@
 		BC6EF58C21C7BAEB003456FB /* HomeCollectionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EF58A21C7BAEB003456FB /* HomeCollectionListCell.swift */; };
 		BC6EF58D21C7BAEB003456FB /* HomeCollectionListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6EF58B21C7BAEB003456FB /* HomeCollectionListCell.xib */; };
 		BC6EF58F21C7C5D9003456FB /* HomeChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EF58E21C7C5D9003456FB /* HomeChildViewController.swift */; };
+		BC85D71921D8C14100562E9E /* AnswerTableListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85D71721D8C14100562E9E /* AnswerTableListCell.swift */; };
+		BC85D71A21D8C14100562E9E /* AnswerTableListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC85D71821D8C14100562E9E /* AnswerTableListCell.xib */; };
+		BC85D72021D91BC800562E9E /* HeaderTagTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85D71F21D91BC800562E9E /* HeaderTagTableCell.swift */; };
 		BCB6C97921C4076700BCEDC2 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */; };
+		BCD0FFD121D9339C00A5083C /* LayerExtenion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0FFD021D9339C00A5083C /* LayerExtenion.swift */; };
 		BCF0613121CCC21E004237EE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF0613021CCC21E004237EE /* TabBarController.swift */; };
 		BCF0613321CCC3E8004237EE /* AskQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF0613221CCC3E8004237EE /* AskQuestionViewController.swift */; };
 		BCF0613521CCC4EE004237EE /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF0613421CCC4EE004237EE /* AnswerViewController.swift */; };
@@ -89,8 +93,12 @@
 		BC6EF58A21C7BAEB003456FB /* HomeCollectionListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionListCell.swift; sourceTree = "<group>"; };
 		BC6EF58B21C7BAEB003456FB /* HomeCollectionListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionListCell.xib; sourceTree = "<group>"; };
 		BC6EF58E21C7C5D9003456FB /* HomeChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChildViewController.swift; sourceTree = "<group>"; };
+		BC85D71721D8C14100562E9E /* AnswerTableListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableListCell.swift; sourceTree = "<group>"; };
+		BC85D71821D8C14100562E9E /* AnswerTableListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerTableListCell.xib; sourceTree = "<group>"; };
+		BC85D71F21D91BC800562E9E /* HeaderTagTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTagTableCell.swift; sourceTree = "<group>"; };
 		BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
 		BCB6C97A21C4082800BCEDC2 /* Quve-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quve-Bridging-Header.h"; sourceTree = "<group>"; };
+		BCD0FFD021D9339C00A5083C /* LayerExtenion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerExtenion.swift; sourceTree = "<group>"; };
 		BCF0613021CCC21E004237EE /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		BCF0613221CCC3E8004237EE /* AskQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionViewController.swift; sourceTree = "<group>"; };
 		BCF0613421CCC4EE004237EE /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +180,7 @@
 				BC3896E121BB5FF3003328E7 /* Info.plist */,
 				BC66A5F921C4D65F00E1C83B /* Font */,
 				BC66A5EE21C42A7100E1C83B /* RTCExtension */,
+				BCD0FFCF21D9338400A5083C /* Extension */,
 				BCB6C97521C3FF5600BCEDC2 /* Model */,
 				BC66A60421C4D88D00E1C83B /* View */,
 				BCB6C97721C3FF6000BCEDC2 /* Controller */,
@@ -227,10 +236,29 @@
 			isa = PBXGroup;
 			children = (
 				BCF0613F21CCC54D004237EE /* Storyboard */,
+				BC85D71521D8C03F00562E9E /* Home */,
+				BC85D71621D8C04800562E9E /* Answer */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC85D71521D8C03F00562E9E /* Home */ = {
+			isa = PBXGroup;
+			children = (
 				BC6EF58A21C7BAEB003456FB /* HomeCollectionListCell.swift */,
 				BC6EF58B21C7BAEB003456FB /* HomeCollectionListCell.xib */,
 			);
-			path = View;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BC85D71621D8C04800562E9E /* Answer */ = {
+			isa = PBXGroup;
+			children = (
+				BC85D71F21D91BC800562E9E /* HeaderTagTableCell.swift */,
+				BC85D71721D8C14100562E9E /* AnswerTableListCell.swift */,
+				BC85D71821D8C14100562E9E /* AnswerTableListCell.xib */,
+			);
+			path = Answer;
 			sourceTree = "<group>";
 		};
 		BCB6C97521C3FF5600BCEDC2 /* Model */ = {
@@ -251,6 +279,14 @@
 				BCF0613E21CCC51F004237EE /* Mypage */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		BCD0FFCF21D9338400A5083C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BCD0FFD021D9339C00A5083C /* LayerExtenion.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		BCF0613A21CCC50A004237EE /* Home */ = {
@@ -431,6 +467,7 @@
 				BC3896E021BB5FF3003328E7 /* LaunchScreen.storyboard in Resources */,
 				BCF0614421CCC5F1004237EE /* Answer.storyboard in Resources */,
 				BC66A60121C4D67E00E1C83B /* SpoqaHanSans-Thin.ttf in Resources */,
+				BC85D71A21D8C14100562E9E /* AnswerTableListCell.xib in Resources */,
 				BC66A60021C4D67E00E1C83B /* SpoqaHanSans-Light.ttf in Resources */,
 				BC6EF58D21C7BAEB003456FB /* HomeCollectionListCell.xib in Resources */,
 				BCF0614A21CCC68B004237EE /* MyPage.storyboard in Resources */,
@@ -571,9 +608,12 @@
 				BCB6C97921C4076700BCEDC2 /* WebRTCClient.swift in Sources */,
 				BC66A5F321C42AC600E1C83B /* RTCSessionDescription+JSON.swift in Sources */,
 				BC6EF58C21C7BAEB003456FB /* HomeCollectionListCell.swift in Sources */,
+				BC85D71921D8C14100562E9E /* AnswerTableListCell.swift in Sources */,
+				BC85D72021D91BC800562E9E /* HeaderTagTableCell.swift in Sources */,
 				BCF0613321CCC3E8004237EE /* AskQuestionViewController.swift in Sources */,
 				BC66A5F221C42AC600E1C83B /* RTCIceCandidate+JSON.swift in Sources */,
 				BCF0613921CCC504004237EE /* MyPageViewController.swift in Sources */,
+				BCD0FFD121D9339C00A5083C /* LayerExtenion.swift in Sources */,
 				BCF0613721CCC4F9004237EE /* NotificationViewController.swift in Sources */,
 				BCF0613521CCC4EE004237EE /* AnswerViewController.swift in Sources */,
 				BC6EF58F21C7C5D9003456FB /* HomeChildViewController.swift in Sources */,
