@@ -11,9 +11,11 @@ import UIKit
 class HeaderTagTableCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    let screenSize = UIScreen.main.bounds.size
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        separatorInset = UIEdgeInsets(top: 0, left: screenSize.width, bottom: 0, right: 0)
         setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: 0)
     }
     
@@ -28,7 +30,6 @@ class HeaderTagTableCell: UITableViewCell {
         collectionView.tag = row
         collectionView.reloadData()
     }
-    
 }
 
 extension HeaderTagTableCell: UICollectionViewDelegate, UICollectionViewDataSource {

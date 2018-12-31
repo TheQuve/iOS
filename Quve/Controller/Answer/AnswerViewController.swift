@@ -12,7 +12,6 @@ class AnswerViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let nibName = UINib(nibName: "AnswerTableListCell", bundle: nil)
@@ -44,7 +43,6 @@ extension AnswerViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "AnswerTableListCell", for: indexPath) as! AnswerTableListCell
-            
             return cell
         }
     }

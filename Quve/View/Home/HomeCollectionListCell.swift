@@ -19,10 +19,8 @@ class HomeCollectionListCell: UICollectionViewCell {
     @IBOutlet weak var answerClassLabel: UILabel!
     @IBOutlet weak var answerCountLabel: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
 }
