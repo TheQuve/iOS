@@ -32,6 +32,7 @@
 		BC85D72021D91BC800562E9E /* HeaderTagTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85D71F21D91BC800562E9E /* HeaderTagTableCell.swift */; };
 		BCB6C97921C4076700BCEDC2 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */; };
 		BCD0FFD121D9339C00A5083C /* Extenion+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0FFD021D9339C00A5083C /* Extenion+CALayer.swift */; };
+		BCD0FFD321DA477F00A5083C /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0FFD221DA477F00A5083C /* FilterViewController.swift */; };
 		BCF0613121CCC21E004237EE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF0613021CCC21E004237EE /* TabBarController.swift */; };
 		BCF0613321CCC3E8004237EE /* AskQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF0613221CCC3E8004237EE /* AskQuestionViewController.swift */; };
 		BCF0613521CCC4EE004237EE /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF0613421CCC4EE004237EE /* AnswerViewController.swift */; };
@@ -99,6 +100,7 @@
 		BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
 		BCB6C97A21C4082800BCEDC2 /* Quve-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quve-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCD0FFD021D9339C00A5083C /* Extenion+CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extenion+CALayer.swift"; sourceTree = "<group>"; };
+		BCD0FFD221DA477F00A5083C /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		BCF0613021CCC21E004237EE /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		BCF0613221CCC3E8004237EE /* AskQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionViewController.swift; sourceTree = "<group>"; };
 		BCF0613421CCC4EE004237EE /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF0613421CCC4EE004237EE /* AnswerViewController.swift */,
+				BCD0FFD221DA477F00A5083C /* FilterViewController.swift */,
 			);
 			path = Answer;
 			sourceTree = "<group>";
@@ -613,6 +616,7 @@
 				BCF0613321CCC3E8004237EE /* AskQuestionViewController.swift in Sources */,
 				BC66A5F221C42AC600E1C83B /* RTCIceCandidate+JSON.swift in Sources */,
 				BCF0613921CCC504004237EE /* MyPageViewController.swift in Sources */,
+				BCD0FFD321DA477F00A5083C /* FilterViewController.swift in Sources */,
 				BCD0FFD121D9339C00A5083C /* Extenion+CALayer.swift in Sources */,
 				BCF0613721CCC4F9004237EE /* NotificationViewController.swift in Sources */,
 				BCF0613521CCC4EE004237EE /* AnswerViewController.swift in Sources */,

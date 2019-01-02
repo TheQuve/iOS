@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eot-Jb-G1c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rga-bQ-ifg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,6 +14,9 @@
         </array>
         <array key="SpoqaHanSans-Light.ttf">
             <string>SpoqaHanSans-Light</string>
+        </array>
+        <array key="SpoqaHanSans-Regular.ttf">
+            <string>SpoqaHanSans-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -130,6 +133,333 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4A-ud-tCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1928.8" y="1530.5847076461771"/>
+        </scene>
+        <!--Filter View Controller-->
+        <scene sceneID="NY6-eW-ryv">
+            <objects>
+                <viewController storyboardIdentifier="FilterViewController" id="rga-bQ-ifg" customClass="FilterViewController" customModule="Quve" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RSw-QO-wXa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MaR-PR-ydJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7W-ay-IAG">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="S6Z-LB-RfV">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="480"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yh1-84-8MX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정렬" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afl-X8-cVx">
+                                                                <rect key="frame" x="19" y="9.5" width="337" height="21"/>
+                                                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="14"/>
+                                                                <color key="textColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="afl-X8-cVx" firstAttribute="leading" secondItem="yh1-84-8MX" secondAttribute="leading" constant="19" id="9iv-IL-0qu"/>
+                                                            <constraint firstItem="afl-X8-cVx" firstAttribute="centerX" secondItem="yh1-84-8MX" secondAttribute="centerX" id="Z7r-DS-RNs"/>
+                                                            <constraint firstItem="afl-X8-cVx" firstAttribute="centerY" secondItem="yh1-84-8MX" secondAttribute="centerY" id="ZFH-Sc-yTz"/>
+                                                            <constraint firstAttribute="height" constant="40" id="hbb-sg-Wd0"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnw-fs-HZd">
+                                                        <rect key="frame" x="0.0" y="40" width="375" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="DUy-rb-WgR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="최신순">
+                                                            <color key="titleColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2r-dD-Qti">
+                                                        <rect key="frame" x="0.0" y="90" width="375" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="거리순">
+                                                            <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tr-fQ-4A6">
+                                                        <rect key="frame" x="0.0" y="140" width="375" height="40"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주제" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxw-UW-i6R">
+                                                                <rect key="frame" x="19" y="9.5" width="337" height="21"/>
+                                                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="14"/>
+                                                                <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Kxw-UW-i6R" firstAttribute="leading" secondItem="4tr-fQ-4A6" secondAttribute="leading" constant="19" id="Hss-2y-fN1"/>
+                                                            <constraint firstAttribute="height" constant="40" id="hFg-gg-fp3"/>
+                                                            <constraint firstItem="Kxw-UW-i6R" firstAttribute="centerY" secondItem="4tr-fQ-4A6" secondAttribute="centerY" id="oNL-dL-beK"/>
+                                                            <constraint firstItem="Kxw-UW-i6R" firstAttribute="centerX" secondItem="4tr-fQ-4A6" secondAttribute="centerX" id="xqa-bG-Sda"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4N6-r1-yFX">
+                                                        <rect key="frame" x="0.0" y="180" width="375" height="300"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ehk-7H-rpn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKQ-8s-963">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="교육">
+                                                                            <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Er-5C-B28">
+                                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="사회·정치">
+                                                                            <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tYU-LS-g4e">
+                                                                <rect key="frame" x="0.0" y="50" width="375" height="50"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a85-kp-aol">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="컴퓨터">
+                                                                            <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKo-wd-cjD">
+                                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="여행">
+                                                                            <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SwL-3Z-VJf">
+                                                                <rect key="frame" x="0.0" y="100" width="375" height="50"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEk-Rq-hWD">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="게임">
+                                                                            <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FC-52-Mys">
+                                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="쇼핑">
+                                                                            <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="deU-My-bgm">
+                                                                <rect key="frame" x="0.0" y="150" width="375" height="50"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eX-2f-Dy7">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="경제">
+                                                                            <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgu-2H-kIx">
+                                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="생활">
+                                                                            <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LdI-oj-DNv">
+                                                                <rect key="frame" x="0.0" y="200" width="375" height="50"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2A-wV-Yi2">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="건강">
+                                                                            <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4L-Or-Ztc">
+                                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="어린이">
+                                                                            <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SGv-zq-nwz">
+                                                                <rect key="frame" x="0.0" y="250" width="375" height="50"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUa-J6-wYB">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="예술">
+                                                                            <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFE-R3-eDq">
+                                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                        <inset key="titleEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="지역">
+                                                                            <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="SwL-3Z-VJf" firstAttribute="height" secondItem="D2r-dD-Qti" secondAttribute="height" id="5sK-0S-0VC"/>
+                                                    <constraint firstItem="LdI-oj-DNv" firstAttribute="height" secondItem="D2r-dD-Qti" secondAttribute="height" id="Au1-ao-1wR"/>
+                                                    <constraint firstItem="4tr-fQ-4A6" firstAttribute="height" secondItem="yh1-84-8MX" secondAttribute="height" id="R6e-Rc-BWf"/>
+                                                    <constraint firstItem="SGv-zq-nwz" firstAttribute="height" secondItem="D2r-dD-Qti" secondAttribute="height" id="Vr2-D3-9kn"/>
+                                                    <constraint firstItem="tYU-LS-g4e" firstAttribute="height" secondItem="D2r-dD-Qti" secondAttribute="height" id="aHC-bE-6YC"/>
+                                                    <constraint firstItem="ehk-7H-rpn" firstAttribute="height" secondItem="D2r-dD-Qti" secondAttribute="height" id="aoH-hs-R67"/>
+                                                    <constraint firstItem="D2r-dD-Qti" firstAttribute="height" secondItem="qnw-fs-HZd" secondAttribute="height" id="rTK-58-ce6"/>
+                                                    <constraint firstItem="deU-My-bgm" firstAttribute="height" secondItem="D2r-dD-Qti" secondAttribute="height" id="y0K-Pl-u1X"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="S6Z-LB-RfV" firstAttribute="top" secondItem="N7W-ay-IAG" secondAttribute="top" id="EpK-Ap-Bh1"/>
+                                            <constraint firstItem="S6Z-LB-RfV" firstAttribute="leading" secondItem="N7W-ay-IAG" secondAttribute="leading" id="bMO-hp-5LG"/>
+                                            <constraint firstAttribute="trailing" secondItem="S6Z-LB-RfV" secondAttribute="trailing" id="opj-Dj-Xd8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="N7W-ay-IAG" firstAttribute="top" secondItem="MaR-PR-ydJ" secondAttribute="top" id="2bN-xO-k7O"/>
+                                    <constraint firstAttribute="bottom" secondItem="N7W-ay-IAG" secondAttribute="bottom" id="NCW-0V-HRF"/>
+                                    <constraint firstAttribute="trailing" secondItem="N7W-ay-IAG" secondAttribute="trailing" id="Tl3-Ze-igk"/>
+                                    <constraint firstItem="N7W-ay-IAG" firstAttribute="width" secondItem="MaR-PR-ydJ" secondAttribute="width" id="sif-cB-Rlj"/>
+                                    <constraint firstItem="N7W-ay-IAG" firstAttribute="height" secondItem="MaR-PR-ydJ" secondAttribute="height" id="sjI-xI-NoT"/>
+                                    <constraint firstItem="N7W-ay-IAG" firstAttribute="leading" secondItem="MaR-PR-ydJ" secondAttribute="leading" id="zUe-Li-8ZX"/>
+                                </constraints>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abl-QJ-7fC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="SpoqaHanSans-Bold" family="SpoqaHanSans" pointSize="17"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="필터" id="xov-pb-Wzx">
+                                        <barButtonItem key="leftBarButtonItem" title="뒤로" id="csX-ht-eZS">
+                                            <color key="tintColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="적용" id="NdE-AA-k8L">
+                                            <color key="tintColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MaR-PR-ydJ" firstAttribute="leading" secondItem="OL9-1Q-a8Y" secondAttribute="leading" id="UEB-oi-ttc"/>
+                            <constraint firstItem="abl-QJ-7fC" firstAttribute="leading" secondItem="OL9-1Q-a8Y" secondAttribute="leading" id="aU8-ed-6Ho"/>
+                            <constraint firstItem="abl-QJ-7fC" firstAttribute="top" secondItem="OL9-1Q-a8Y" secondAttribute="top" id="cLA-bq-JEH"/>
+                            <constraint firstItem="abl-QJ-7fC" firstAttribute="trailing" secondItem="OL9-1Q-a8Y" secondAttribute="trailing" id="gmL-1q-TpJ"/>
+                            <constraint firstItem="OL9-1Q-a8Y" firstAttribute="trailing" secondItem="MaR-PR-ydJ" secondAttribute="trailing" id="hR1-si-LTX"/>
+                            <constraint firstItem="MaR-PR-ydJ" firstAttribute="top" secondItem="abl-QJ-7fC" secondAttribute="bottom" id="lyW-02-6Vk"/>
+                            <constraint firstItem="OL9-1Q-a8Y" firstAttribute="bottom" secondItem="MaR-PR-ydJ" secondAttribute="bottom" id="qGv-qC-Hjj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OL9-1Q-a8Y"/>
+                    </view>
+                    <connections>
+                        <outlet property="artButton" destination="WUa-J6-wYB" id="3hM-In-FiC"/>
+                        <outlet property="childButton" destination="d4L-Or-Ztc" id="5Og-gA-QJd"/>
+                        <outlet property="closestButton" destination="D2r-dD-Qti" id="mjr-G0-wRi"/>
+                        <outlet property="computerButton" destination="a85-kp-aol" id="oVq-x8-jeJ"/>
+                        <outlet property="economyButton" destination="8eX-2f-Dy7" id="fIX-Da-93x"/>
+                        <outlet property="educationButton" destination="AKQ-8s-963" id="Ohs-Jz-aAK"/>
+                        <outlet property="gameButton" destination="rEk-Rq-hWD" id="CAX-wy-AXS"/>
+                        <outlet property="healthButton" destination="l2A-wV-Yi2" id="C0Q-BS-QgT"/>
+                        <outlet property="lastestButton" destination="qnw-fs-HZd" id="oRX-K8-cNh"/>
+                        <outlet property="lifestyleButton" destination="Jgu-2H-kIx" id="O7M-9J-uig"/>
+                        <outlet property="placeButton" destination="gFE-R3-eDq" id="i9C-PM-V3R"/>
+                        <outlet property="shoppingButton" destination="8FC-52-Mys" id="Ndd-KQ-HKk"/>
+                        <outlet property="societyButton" destination="2Er-5C-B28" id="Jyf-R2-jn5"/>
+                        <outlet property="tripButton" destination="yKo-wd-cjD" id="iJb-hE-thU"/>
+                        <outletCollection property="uiButtons" destination="qnw-fs-HZd" collectionClass="NSMutableArray" id="Abr-fx-oI7"/>
+                        <outletCollection property="uiButtons" destination="D2r-dD-Qti" collectionClass="NSMutableArray" id="xft-6n-JDP"/>
+                        <outletCollection property="uiButtons" destination="AKQ-8s-963" collectionClass="NSMutableArray" id="QYQ-NX-wOk"/>
+                        <outletCollection property="uiButtons" destination="2Er-5C-B28" collectionClass="NSMutableArray" id="8Rf-7Z-nUG"/>
+                        <outletCollection property="uiButtons" destination="a85-kp-aol" collectionClass="NSMutableArray" id="q3K-Iq-bKe"/>
+                        <outletCollection property="uiButtons" destination="yKo-wd-cjD" collectionClass="NSMutableArray" id="p1k-Zr-ACK"/>
+                        <outletCollection property="uiButtons" destination="rEk-Rq-hWD" collectionClass="NSMutableArray" id="IBa-vk-oga"/>
+                        <outletCollection property="uiButtons" destination="8FC-52-Mys" collectionClass="NSMutableArray" id="OPY-C7-5w2"/>
+                        <outletCollection property="uiButtons" destination="8eX-2f-Dy7" collectionClass="NSMutableArray" id="epn-rr-aiF"/>
+                        <outletCollection property="uiButtons" destination="Jgu-2H-kIx" collectionClass="NSMutableArray" id="uZ6-ZW-xcG"/>
+                        <outletCollection property="uiButtons" destination="l2A-wV-Yi2" collectionClass="NSMutableArray" id="ggq-Pr-Tmb"/>
+                        <outletCollection property="uiButtons" destination="d4L-Or-Ztc" collectionClass="NSMutableArray" id="ORd-MN-mMB"/>
+                        <outletCollection property="uiButtons" destination="WUa-J6-wYB" collectionClass="NSMutableArray" id="Mqn-hW-UTR"/>
+                        <outletCollection property="uiButtons" destination="gFE-R3-eDq" collectionClass="NSMutableArray" id="o4b-eS-hZr"/>
+                        <outletCollection property="sortSectionButtons" destination="qnw-fs-HZd" collectionClass="NSMutableArray" id="gSF-od-hov"/>
+                        <outletCollection property="sortSectionButtons" destination="D2r-dD-Qti" collectionClass="NSMutableArray" id="zVm-2B-obF"/>
+                        <outletCollection property="topicSectionButtons" destination="AKQ-8s-963" collectionClass="NSMutableArray" id="GcD-7k-TWZ"/>
+                        <outletCollection property="topicSectionButtons" destination="2Er-5C-B28" collectionClass="NSMutableArray" id="Fzf-lX-5QT"/>
+                        <outletCollection property="topicSectionButtons" destination="a85-kp-aol" collectionClass="NSMutableArray" id="PA5-kh-Qoc"/>
+                        <outletCollection property="topicSectionButtons" destination="yKo-wd-cjD" collectionClass="NSMutableArray" id="ykj-63-Gur"/>
+                        <outletCollection property="topicSectionButtons" destination="rEk-Rq-hWD" collectionClass="NSMutableArray" id="gRL-2H-JPr"/>
+                        <outletCollection property="topicSectionButtons" destination="8FC-52-Mys" collectionClass="NSMutableArray" id="xt3-qR-XYZ"/>
+                        <outletCollection property="topicSectionButtons" destination="8eX-2f-Dy7" collectionClass="NSMutableArray" id="NRz-Qw-ett"/>
+                        <outletCollection property="topicSectionButtons" destination="Jgu-2H-kIx" collectionClass="NSMutableArray" id="Dxc-GU-fSQ"/>
+                        <outletCollection property="topicSectionButtons" destination="l2A-wV-Yi2" collectionClass="NSMutableArray" id="UGF-U9-dXm"/>
+                        <outletCollection property="topicSectionButtons" destination="d4L-Or-Ztc" collectionClass="NSMutableArray" id="KY2-kB-suQ"/>
+                        <outletCollection property="topicSectionButtons" destination="WUa-J6-wYB" collectionClass="NSMutableArray" id="vNn-zD-ntB"/>
+                        <outletCollection property="topicSectionButtons" destination="gFE-R3-eDq" collectionClass="NSMutableArray" id="EXq-Hl-xSU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="suF-7n-Ick" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2816.8000000000002" y="1530.5847076461771"/>
         </scene>
         <!--답변하기-->
         <scene sceneID="H3O-7s-5xy">
