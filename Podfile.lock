@@ -1,5 +1,28 @@
 PODS:
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.39.0):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.39.0):
+    - FBSDKCoreKit
+  - GoogleSignIn (4.4.0):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.0)":
+    - GoogleToolboxForMac/DebugUtils (= 2.2.0)
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
   - GoogleWebRTC (1.1.25935)
+  - GTMSessionFetcher/Core (1.2.1)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
@@ -9,6 +32,8 @@ PODS:
   - XLPagerTabStrip (8.1.0)
 
 DEPENDENCIES:
+  - FBSDKLoginKit
+  - GoogleSignIn
   - GoogleWebRTC
   - RxCocoa
   - RxSwift
@@ -17,7 +42,13 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - GoogleSignIn
+    - GoogleToolboxForMac
     - GoogleWebRTC
+    - GTMSessionFetcher
     - RxAtomic
     - RxCocoa
     - RxSwift
@@ -25,13 +56,19 @@ SPEC REPOS:
     - XLPagerTabStrip
 
 SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: 1e3981faefab8c88edfaa9eecd94aab02d99a9bc
+  FBSDKLoginKit: 30ba5039a2c53d65a75103889bc2deebdacd5a1f
+  GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GoogleWebRTC: 10e895a5bb38638782536044541217c1c571a5c5
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   XLPagerTabStrip: 22d4c58200d7c105e0e407ab6bfd01a5d85014be
 
-PODFILE CHECKSUM: 5200cb6614b4cf7ff0b231d502cab99aab532365
+PODFILE CHECKSUM: 2099eb90672a82572831106ddca112a91fa7370b
 
 COCOAPODS: 1.5.3

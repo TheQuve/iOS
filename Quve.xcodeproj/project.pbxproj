@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		29C3E4FEE231F377D33BA221 /* Pods_QuveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514C18440FCE1754FE193BFE /* Pods_QuveTests.framework */; };
+		BC2C2F7121DDEF2B002DF130 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2C2F7021DDEF2B002DF130 /* Login.storyboard */; };
+		BC2C2F7421DDF3FB002DF130 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C2F7321DDF3FB002DF130 /* SignInViewController.swift */; };
 		BC3896D321BB5FF0003328E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3896D221BB5FF0003328E7 /* AppDelegate.swift */; };
 		BC3896D521BB5FF0003328E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3896D421BB5FF0003328E7 /* HomeViewController.swift */; };
 		BC3896D821BB5FF0003328E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3896D621BB5FF0003328E7 /* Main.storyboard */; };
@@ -69,6 +71,8 @@
 		76CABE4D3B7399A2CBC58B65 /* Pods-QuveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuveUITests/Pods-QuveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B979730501BFEE3045B7CABE /* Pods-Quve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quve.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quve/Pods-Quve.debug.xcconfig"; sourceTree = "<group>"; };
 		B9EBAAB51E772530D88416A9 /* Pods-Quve.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quve.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quve/Pods-Quve.release.xcconfig"; sourceTree = "<group>"; };
+		BC2C2F7021DDEF2B002DF130 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		BC2C2F7321DDF3FB002DF130 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BC3896CF21BB5FF0003328E7 /* Quve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC3896D221BB5FF0003328E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC3896D421BB5FF0003328E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +154,14 @@
 				CBA000ABDB36D17DC099AC9F /* Pods_QuveUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC2C2F7221DDF3E0002DF130 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BC2C2F7321DDF3FB002DF130 /* SignInViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		BC3896C621BB5FF0003328E7 = {
@@ -273,6 +285,7 @@
 		BCB6C97721C3FF6000BCEDC2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BC2C2F7221DDF3E0002DF130 /* Login */,
 				BCF0613021CCC21E004237EE /* TabBarController.swift */,
 				BCF0613A21CCC50A004237EE /* Home */,
 				BCF0613B21CCC50F004237EE /* Answer */,
@@ -340,6 +353,7 @@
 				BCF0614521CCC61E004237EE /* Notification.storyboard */,
 				BCF0614221CCC5F1004237EE /* Answer.storyboard */,
 				BC3896D621BB5FF0003328E7 /* Main.storyboard */,
+				BC2C2F7021DDEF2B002DF130 /* Login.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -369,6 +383,7 @@
 				BC3896CC21BB5FF0003328E7 /* Frameworks */,
 				BC3896CD21BB5FF0003328E7 /* Resources */,
 				FCCF95B7A1D132DFBB2099FF /* [CP] Embed Pods Frameworks */,
+				091401C4712E9B300E30EF4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -478,6 +493,7 @@
 				BC3896DD21BB5FF3003328E7 /* Assets.xcassets in Resources */,
 				BC3896D821BB5FF0003328E7 /* Main.storyboard in Resources */,
 				BCF0614721CCC61E004237EE /* Notification.storyboard in Resources */,
+				BC2C2F7121DDEF2B002DF130 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +514,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		091401C4712E9B300E30EF4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Quve/Pods-Quve-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quve/Pods-Quve-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		18E6E49D6EB6067A66CAD44E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -573,6 +611,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Quve/Pods-Quve-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -584,6 +627,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -611,6 +659,7 @@
 				BCB6C97921C4076700BCEDC2 /* WebRTCClient.swift in Sources */,
 				BC66A5F321C42AC600E1C83B /* RTCSessionDescription+JSON.swift in Sources */,
 				BC6EF58C21C7BAEB003456FB /* HomeCollectionListCell.swift in Sources */,
+				BC2C2F7421DDF3FB002DF130 /* SignInViewController.swift in Sources */,
 				BC85D71921D8C14100562E9E /* AnswerTableListCell.swift in Sources */,
 				BC85D72021D91BC800562E9E /* HeaderTagTableCell.swift in Sources */,
 				BCF0613321CCC3E8004237EE /* AskQuestionViewController.swift in Sources */,
