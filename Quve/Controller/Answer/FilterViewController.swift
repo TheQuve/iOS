@@ -31,6 +31,11 @@ class FilterViewController: UIViewController {
     @IBOutlet var sortSectionButtons: [UIButton]!
     @IBOutlet var topicSectionButtons: [UIButton]!
     
+    @IBAction func backBarButton(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUIButtons()

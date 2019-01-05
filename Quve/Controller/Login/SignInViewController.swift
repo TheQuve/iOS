@@ -9,8 +9,9 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import GoogleSignIn
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, GIDSignInUIDelegate {
 
     let disposeBag = DisposeBag()
     
@@ -20,6 +21,7 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        GIDSignIn.sharedInstance()?.uiDelegate = self
         addValidations()
     }
     

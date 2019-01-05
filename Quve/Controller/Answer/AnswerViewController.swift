@@ -11,6 +11,12 @@ import UIKit
 class AnswerViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBAction func filterBarButton(_ sender: UIBarButtonItem) {
+        let filterVC = storyboard?.instantiateViewController(withIdentifier: "FilterViewController") as! FilterViewController
+        self.present(filterVC, animated: true, completion: nil)
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

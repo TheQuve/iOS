@@ -40,7 +40,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="123.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hg5-Pj-Ym2">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hg5-Pj-Ym2">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -125,7 +125,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6gB-6v-zLm"/>
                     </view>
-                    <navigationItem key="navigationItem" title="답변하기" id="xtc-6h-R7c"/>
+                    <navigationItem key="navigationItem" title="답변하기" id="xtc-6h-R7c">
+                        <barButtonItem key="leftBarButtonItem" image="filterIcon" id="HNv-GO-LJ6">
+                            <color key="tintColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="filterBarButton:" destination="wwj-Ib-Ldt" id="0AB-P8-z3x"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="iconSearch" id="AU1-bv-CSn">
+                            <color key="tintColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="gnH-kE-4n4" id="ttU-Kj-KT2"/>
                     </connections>
@@ -155,7 +165,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정렬" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afl-X8-cVx">
-                                                                <rect key="frame" x="19" y="12" width="337" height="16.5"/>
+                                                                <rect key="frame" x="19" y="9.5" width="337" height="21"/>
                                                                 <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="14"/>
                                                                 <color key="textColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -194,7 +204,7 @@
                                                         <rect key="frame" x="0.0" y="140" width="375" height="40"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주제" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxw-UW-i6R">
-                                                                <rect key="frame" x="19" y="12" width="337" height="16.5"/>
+                                                                <rect key="frame" x="19" y="9.5" width="337" height="21"/>
                                                                 <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="14"/>
                                                                 <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -392,6 +402,9 @@
                                     <navigationItem title="필터" id="xov-pb-Wzx">
                                         <barButtonItem key="leftBarButtonItem" title="뒤로" id="csX-ht-eZS">
                                             <color key="tintColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="backBarButton:" destination="rga-bQ-ifg" id="3cX-Dj-XGd"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="적용" id="NdE-AA-k8L">
                                             <color key="tintColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -486,5 +499,7 @@
     </scenes>
     <resources>
         <image name="answerIcon" width="20" height="20"/>
+        <image name="filterIcon" width="20" height="14"/>
+        <image name="iconSearch" width="20" height="19"/>
     </resources>
 </document>
