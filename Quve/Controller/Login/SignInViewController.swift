@@ -10,6 +10,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 import GoogleSignIn
+import FacebookCore
+import FacebookLogin
 
 class SignInViewController: UIViewController, GIDSignInUIDelegate {
 
@@ -18,10 +20,12 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var facebookLoginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance()?.uiDelegate = self
+        facebookLoginButton.addTarget(self, action: #selector(facebookLoginButtonAction), for: .touchUpInside)
         addValidations()
     }
     
@@ -60,5 +64,19 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
                 self.passwordTextField.backgroundColor = $0.element! ? #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) : #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
             }
             .disposed(by: disposeBag)
+    }
+    
+    @objc private func facebookLoginButtonAction() {
+        let facebookManager = LoginManager()
+        facebookManager.logIn(readPermissions: [.publicProfile], viewController: self) { loginResult in
+            switch loginResult {
+            case .failed(let error):
+                print(error)
+            case .cancelled:
+                print("User cancelled login.")
+            case .success(let grantedPermissions, let declinedPermissions, let accessToken):
+                print(accessToken)
+            }
+        }
     }
 }

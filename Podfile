@@ -11,10 +11,13 @@ target 'Quve' do
   pod 'GoogleWebRTC'
   pod 'Starscream'
   pod 'XLPagerTabStrip'
+  pod 'Alamofire'
   
   # SNS Login
   pod 'GoogleSignIn'
-  pod 'FBSDKLoginKit'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
 
   target 'QuveTests' do
     inherit! :search_paths

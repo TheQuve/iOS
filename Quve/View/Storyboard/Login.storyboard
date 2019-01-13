@@ -57,6 +57,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="LBU-Q1-w6E" id="Rnk-zw-eyW"/>
+                        <outlet property="facebookLoginButton" destination="FOk-9R-1Kp" id="40P-Mw-3Fn"/>
                         <outlet property="loginButton" destination="ITi-D1-2YW" id="WGi-bo-nu5"/>
                         <outlet property="passwordTextField" destination="3fY-1K-hby" id="Lan-B0-914"/>
                     </connections>

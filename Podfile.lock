@@ -1,13 +1,29 @@
 PODS:
+  - Alamofire (4.8.0)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
-  - FBSDKCoreKit (4.39.0):
+  - FacebookCore (0.5.0):
     - Bolts (~> 1.9)
-  - FBSDKLoginKit (4.39.0):
+    - FBSDKCoreKit (~> 4.37)
+  - FacebookLogin (0.5.0):
+    - Bolts (~> 1.9)
+    - FacebookCore (~> 0.5)
+    - FBSDKCoreKit (~> 4.37)
+    - FBSDKLoginKit (~> 4.37)
+  - FacebookShare (0.5.0):
+    - Bolts (~> 1.9)
+    - FacebookCore (~> 0.5)
+    - FBSDKCoreKit (~> 4.37)
+    - FBSDKShareKit (~> 4.37)
+  - FBSDKCoreKit (4.39.1):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.39.1):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.39.1):
     - FBSDKCoreKit
   - GoogleSignIn (4.4.0):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
@@ -21,7 +37,7 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.2.0)
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
-  - GoogleWebRTC (1.1.25935)
+  - GoogleWebRTC (1.1.26195)
   - GTMSessionFetcher/Core (1.2.1)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
@@ -29,10 +45,13 @@ PODS:
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
   - Starscream (3.0.6)
-  - XLPagerTabStrip (8.1.0)
+  - XLPagerTabStrip (8.1.1)
 
 DEPENDENCIES:
-  - FBSDKLoginKit
+  - Alamofire
+  - FacebookCore
+  - FacebookLogin
+  - FacebookShare
   - GoogleSignIn
   - GoogleWebRTC
   - RxCocoa
@@ -42,9 +61,14 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Bolts
+    - FacebookCore
+    - FacebookLogin
+    - FacebookShare
     - FBSDKCoreKit
     - FBSDKLoginKit
+    - FBSDKShareKit
     - GoogleSignIn
     - GoogleToolboxForMac
     - GoogleWebRTC
@@ -56,19 +80,24 @@ SPEC REPOS:
     - XLPagerTabStrip
 
 SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  FBSDKCoreKit: 1e3981faefab8c88edfaa9eecd94aab02d99a9bc
-  FBSDKLoginKit: 30ba5039a2c53d65a75103889bc2deebdacd5a1f
+  FacebookCore: 74288d0add931d361b1596beae787ab72c438249
+  FacebookLogin: ebcf34714a1cb9f0759d9f071cfb01ed500996cf
+  FacebookShare: 963b4bb1124a64a395b1e428163d70b5774116e8
+  FBSDKCoreKit: f442aa96179cc9b382bb4abeb7e340a47cca8f91
+  FBSDKLoginKit: c3079d9a4db27c492287b1eed7a4272b28cf8a59
+  FBSDKShareKit: 27d7b982e7b1f4638da2f2b1ab6eba5afc6b5888
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
-  GoogleWebRTC: 10e895a5bb38638782536044541217c1c571a5c5
+  GoogleWebRTC: 3f4917f3008322ab2689c06b5e0e5c50a7252a8c
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
-  XLPagerTabStrip: 22d4c58200d7c105e0e407ab6bfd01a5d85014be
+  XLPagerTabStrip: 63166e21c9844fa30f2d95d30f335e73be5caf22
 
-PODFILE CHECKSUM: 2099eb90672a82572831106ddca112a91fa7370b
+PODFILE CHECKSUM: 948751feacc7ddd87acb8a77925f7c20e2abdda2
 
 COCOAPODS: 1.5.3

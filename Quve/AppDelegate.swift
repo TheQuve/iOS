@@ -9,29 +9,39 @@
 import UIKit
 import CoreData
 import GoogleSignIn
+import FacebookCore
+import FacebookLogin
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        return GIDSignIn
-            .sharedInstance()
-            .handle(
-                url as URL?,
-                sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
-                annotation: options[UIApplication.OpenURLOptionsKey.annotation
-                ])
-    }
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // Google SNS Login
+        // Google
         GIDSignIn.sharedInstance().clientID = "294309456691-k8ht5h0cecpt22dbis6q2qagp7gi79og.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
         
+        // Facebook
+        SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
+    }
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+
+        if GoogleAuth.isValidatedWithUrl(url) {
+            return GIDSignIn.sharedInstance().handle(
+                url,
+                sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+                annotation: options[UIApplication.OpenURLOptionsKey.annotation])
+        }
+        else if FacebookAuth.isValidatedWithUrl(url) {
+            return SDKApplicationDelegate.shared.application(app, open: url, options: options)
+        }
+        else {
+            return false
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -50,6 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        AppEventsLogger.activate(application)
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
