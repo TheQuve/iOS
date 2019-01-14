@@ -10,7 +10,13 @@
 		29C3E4FEE231F377D33BA221 /* Pods_QuveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514C18440FCE1754FE193BFE /* Pods_QuveTests.framework */; };
 		BC0CEE6621EB5D62001FE7D6 /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE6521EB5D62001FE7D6 /* GoogleAuth.swift */; };
 		BC0CEE6A21EB5D7F001FE7D6 /* FacebookAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE6921EB5D7F001FE7D6 /* FacebookAuth.swift */; };
-		BC0CEE6D21EB7C39001FE7D6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE6C21EB7C39001FE7D6 /* API.swift */; };
+		BC0CEE6F21EC6F61001FE7D6 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE6E21EC6F61001FE7D6 /* APIService.swift */; };
+		BC0CEE7121EC7007001FE7D6 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE7021EC7007001FE7D6 /* UserRouter.swift */; };
+		BC0CEE7421EC86DD001FE7D6 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE7321EC86DD001FE7D6 /* APIConfiguration.swift */; };
+		BC0CEE7621EC8900001FE7D6 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE7521EC8900001FE7D6 /* InfoModel.swift */; };
+		BC0CEE7821EC8995001FE7D6 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE7721EC8995001FE7D6 /* LoginModel.swift */; };
+		BC0CEE7B21EC8A63001FE7D6 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE7A21EC8A63001FE7D6 /* RegisterModel.swift */; };
+		BC0CEE7D21EC8A97001FE7D6 /* FacebookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE7C21EC8A97001FE7D6 /* FacebookModel.swift */; };
 		BC2C2F7121DDEF2B002DF130 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2C2F7021DDEF2B002DF130 /* Login.storyboard */; };
 		BC2C2F7421DDF3FB002DF130 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C2F7321DDF3FB002DF130 /* SignInViewController.swift */; };
 		BC3896D321BB5FF0003328E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3896D221BB5FF0003328E7 /* AppDelegate.swift */; };
@@ -76,7 +82,13 @@
 		B9EBAAB51E772530D88416A9 /* Pods-Quve.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quve.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quve/Pods-Quve.release.xcconfig"; sourceTree = "<group>"; };
 		BC0CEE6521EB5D62001FE7D6 /* GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
 		BC0CEE6921EB5D7F001FE7D6 /* FacebookAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookAuth.swift; sourceTree = "<group>"; };
-		BC0CEE6C21EB7C39001FE7D6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BC0CEE6E21EC6F61001FE7D6 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		BC0CEE7021EC7007001FE7D6 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		BC0CEE7321EC86DD001FE7D6 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		BC0CEE7521EC8900001FE7D6 /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
+		BC0CEE7721EC8995001FE7D6 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		BC0CEE7A21EC8A63001FE7D6 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		BC0CEE7C21EC8A97001FE7D6 /* FacebookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookModel.swift; sourceTree = "<group>"; };
 		BC2C2F7021DDEF2B002DF130 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		BC2C2F7321DDF3FB002DF130 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BC3896CF21BB5FF0003328E7 /* Quve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quve.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,9 +177,30 @@
 		BC0CEE6B21EB7C2E001FE7D6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				BC0CEE6C21EB7C39001FE7D6 /* API.swift */,
+				BC0CEE7221EC7187001FE7D6 /* API */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		BC0CEE7221EC7187001FE7D6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BC0CEE6E21EC6F61001FE7D6 /* APIService.swift */,
+				BC0CEE7321EC86DD001FE7D6 /* APIConfiguration.swift */,
+				BC0CEE7021EC7007001FE7D6 /* UserRouter.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BC0CEE7921EC89DF001FE7D6 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				BC0CEE7521EC8900001FE7D6 /* InfoModel.swift */,
+				BC0CEE7721EC8995001FE7D6 /* LoginModel.swift */,
+				BC0CEE7A21EC8A63001FE7D6 /* RegisterModel.swift */,
+				BC0CEE7C21EC8A97001FE7D6 /* FacebookModel.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		BC2C2F7221DDF3E0002DF130 /* Login */ = {
@@ -294,6 +327,7 @@
 		BCB6C97521C3FF5600BCEDC2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BC0CEE7921EC89DF001FE7D6 /* User */,
 				BC0CEE6B21EB7C2E001FE7D6 /* Network */,
 			);
 			path = Model;
@@ -678,6 +712,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0CEE7D21EC8A97001FE7D6 /* FacebookModel.swift in Sources */,
 				BC3896D521BB5FF0003328E7 /* HomeViewController.swift in Sources */,
 				BC3896DB21BB5FF0003328E7 /* Quve.xcdatamodeld in Sources */,
 				BCF0613121CCC21E004237EE /* TabBarController.swift in Sources */,
@@ -685,6 +720,8 @@
 				BC3896D321BB5FF0003328E7 /* AppDelegate.swift in Sources */,
 				BC66A5ED21C428D100E1C83B /* SignalClient.swift in Sources */,
 				BCB6C97921C4076700BCEDC2 /* WebRTCClient.swift in Sources */,
+				BC0CEE7421EC86DD001FE7D6 /* APIConfiguration.swift in Sources */,
+				BC0CEE7B21EC8A63001FE7D6 /* RegisterModel.swift in Sources */,
 				BC66A5F321C42AC600E1C83B /* RTCSessionDescription+JSON.swift in Sources */,
 				BC6EF58C21C7BAEB003456FB /* HomeCollectionListCell.swift in Sources */,
 				BC2C2F7421DDF3FB002DF130 /* SignInViewController.swift in Sources */,
@@ -693,11 +730,14 @@
 				BC0CEE6621EB5D62001FE7D6 /* GoogleAuth.swift in Sources */,
 				BCF0613321CCC3E8004237EE /* AskQuestionViewController.swift in Sources */,
 				BC66A5F221C42AC600E1C83B /* RTCIceCandidate+JSON.swift in Sources */,
-				BC0CEE6D21EB7C39001FE7D6 /* API.swift in Sources */,
 				BCF0613921CCC504004237EE /* MyPageViewController.swift in Sources */,
 				BCD0FFD321DA477F00A5083C /* FilterViewController.swift in Sources */,
+				BC0CEE7121EC7007001FE7D6 /* UserRouter.swift in Sources */,
+				BC0CEE7821EC8995001FE7D6 /* LoginModel.swift in Sources */,
 				BCD0FFD121D9339C00A5083C /* Extenion+CALayer.swift in Sources */,
+				BC0CEE6F21EC6F61001FE7D6 /* APIService.swift in Sources */,
 				BCF0613721CCC4F9004237EE /* NotificationViewController.swift in Sources */,
+				BC0CEE7621EC8900001FE7D6 /* InfoModel.swift in Sources */,
 				BCF0613521CCC4EE004237EE /* AnswerViewController.swift in Sources */,
 				BC6EF58F21C7C5D9003456FB /* HomeChildViewController.swift in Sources */,
 				BC66A5F421C42AC600E1C83B /* RTCStates.swift in Sources */,
