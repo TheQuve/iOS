@@ -26,6 +26,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
         super.viewDidLoad()
         GIDSignIn.sharedInstance()?.uiDelegate = self
         facebookLoginButton.addTarget(self, action: #selector(facebookLoginButtonAction), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(pressLoginButton(_:)), for: .touchUpInside)
         addValidations()
     }
     
@@ -77,6 +78,31 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
             case .success(let grantedPermissions, let declinedPermissions, let accessToken):
                 print(accessToken)
             }
+        }
+    }
+    
+    @objc private func pressLoginButton(_ sender: UIButton) {
+        let email = emailTextField.text
+        let password = passwordTextField.text
+        APIClient.login(username: email!, password: password!) { (result) in
+            switch result {
+            case .success(let userData):
+                print(userData.token!)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+}
+
+extension SignInViewController: URLSessionDelegate {
+    func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+        if (challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodClientCertificate) {
+            completionHandler(.rejectProtectionSpace, nil)
+        }
+        if (challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust) {
+            let credential = URLCredential(trust: challenge.protectionSpace.serverTrust!)
+            completionHandler(.useCredential, credential)
         }
     }
 }

@@ -33,7 +33,7 @@ extension UserRouter: APIConfiguration {
     var path: String {
         switch self {
         case .login:
-            return "/user/login"
+            return "/user/login/"
         case .facebook:
             return "/user/facebook"
         case .register:
@@ -61,10 +61,10 @@ extension UserRouter: APIConfiguration {
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
         
         urlRequest.httpMethod = method.rawValue
-        
+
         urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
         urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
-        
+
         if let parameters = parameters {
             do {
                 urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])

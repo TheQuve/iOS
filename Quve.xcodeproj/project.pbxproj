@@ -17,6 +17,10 @@
 		BC0CEE7821EC8995001FE7D6 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE7721EC8995001FE7D6 /* LoginModel.swift */; };
 		BC0CEE7B21EC8A63001FE7D6 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE7A21EC8A63001FE7D6 /* RegisterModel.swift */; };
 		BC0CEE7D21EC8A97001FE7D6 /* FacebookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE7C21EC8A97001FE7D6 /* FacebookModel.swift */; };
+		BC0CEE8021EE07B9001FE7D6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE7F21EE07B9001FE7D6 /* APIClient.swift */; };
+		BC0CEE8221EE23BA001FE7D6 /* CategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE8121EE23BA001FE7D6 /* CategoryRouter.swift */; };
+		BC0CEE8421EE251A001FE7D6 /* QuestionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE8321EE251A001FE7D6 /* QuestionRouter.swift */; };
+		BC0CEE8621EE54E7001FE7D6 /* Extension+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE8521EE54E7001FE7D6 /* Extension+JSON.swift */; };
 		BC2C2F7121DDEF2B002DF130 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2C2F7021DDEF2B002DF130 /* Login.storyboard */; };
 		BC2C2F7421DDF3FB002DF130 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C2F7321DDF3FB002DF130 /* SignInViewController.swift */; };
 		BC3896D321BB5FF0003328E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3896D221BB5FF0003328E7 /* AppDelegate.swift */; };
@@ -89,6 +93,10 @@
 		BC0CEE7721EC8995001FE7D6 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		BC0CEE7A21EC8A63001FE7D6 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		BC0CEE7C21EC8A97001FE7D6 /* FacebookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookModel.swift; sourceTree = "<group>"; };
+		BC0CEE7F21EE07B9001FE7D6 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		BC0CEE8121EE23BA001FE7D6 /* CategoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRouter.swift; sourceTree = "<group>"; };
+		BC0CEE8321EE251A001FE7D6 /* QuestionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRouter.swift; sourceTree = "<group>"; };
+		BC0CEE8521EE54E7001FE7D6 /* Extension+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+JSON.swift"; sourceTree = "<group>"; };
 		BC2C2F7021DDEF2B002DF130 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		BC2C2F7321DDF3FB002DF130 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BC3896CF21BB5FF0003328E7 /* Quve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quve.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +185,7 @@
 		BC0CEE6B21EB7C2E001FE7D6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BC0CEE7E21EE07A8001FE7D6 /* Router */,
 				BC0CEE7221EC7187001FE7D6 /* API */,
 			);
 			path = Network;
@@ -187,7 +196,7 @@
 			children = (
 				BC0CEE6E21EC6F61001FE7D6 /* APIService.swift */,
 				BC0CEE7321EC86DD001FE7D6 /* APIConfiguration.swift */,
-				BC0CEE7021EC7007001FE7D6 /* UserRouter.swift */,
+				BC0CEE7F21EE07B9001FE7D6 /* APIClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -201,6 +210,16 @@
 				BC0CEE7C21EC8A97001FE7D6 /* FacebookModel.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		BC0CEE7E21EE07A8001FE7D6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BC0CEE7021EC7007001FE7D6 /* UserRouter.swift */,
+				BC0CEE8121EE23BA001FE7D6 /* CategoryRouter.swift */,
+				BC0CEE8321EE251A001FE7D6 /* QuestionRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		BC2C2F7221DDF3E0002DF130 /* Login */ = {
@@ -351,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				BCD0FFD021D9339C00A5083C /* Extenion+CALayer.swift */,
+				BC0CEE8521EE54E7001FE7D6 /* Extension+JSON.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -720,12 +740,15 @@
 				BC3896D321BB5FF0003328E7 /* AppDelegate.swift in Sources */,
 				BC66A5ED21C428D100E1C83B /* SignalClient.swift in Sources */,
 				BCB6C97921C4076700BCEDC2 /* WebRTCClient.swift in Sources */,
+				BC0CEE8421EE251A001FE7D6 /* QuestionRouter.swift in Sources */,
 				BC0CEE7421EC86DD001FE7D6 /* APIConfiguration.swift in Sources */,
 				BC0CEE7B21EC8A63001FE7D6 /* RegisterModel.swift in Sources */,
 				BC66A5F321C42AC600E1C83B /* RTCSessionDescription+JSON.swift in Sources */,
 				BC6EF58C21C7BAEB003456FB /* HomeCollectionListCell.swift in Sources */,
 				BC2C2F7421DDF3FB002DF130 /* SignInViewController.swift in Sources */,
 				BC85D71921D8C14100562E9E /* AnswerTableListCell.swift in Sources */,
+				BC0CEE8621EE54E7001FE7D6 /* Extension+JSON.swift in Sources */,
+				BC0CEE8221EE23BA001FE7D6 /* CategoryRouter.swift in Sources */,
 				BC85D72021D91BC800562E9E /* HeaderTagTableCell.swift in Sources */,
 				BC0CEE6621EB5D62001FE7D6 /* GoogleAuth.swift in Sources */,
 				BCF0613321CCC3E8004237EE /* AskQuestionViewController.swift in Sources */,
@@ -735,6 +758,7 @@
 				BC0CEE7121EC7007001FE7D6 /* UserRouter.swift in Sources */,
 				BC0CEE7821EC8995001FE7D6 /* LoginModel.swift in Sources */,
 				BCD0FFD121D9339C00A5083C /* Extenion+CALayer.swift in Sources */,
+				BC0CEE8021EE07B9001FE7D6 /* APIClient.swift in Sources */,
 				BC0CEE6F21EC6F61001FE7D6 /* APIService.swift in Sources */,
 				BCF0613721CCC4F9004237EE /* NotificationViewController.swift in Sources */,
 				BC0CEE7621EC8900001FE7D6 /* InfoModel.swift in Sources */,

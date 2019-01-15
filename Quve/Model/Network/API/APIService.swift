@@ -11,7 +11,7 @@ import Foundation
 
 struct APIService {
     struct ProductionServer {
-        static let baseURL = "https://www.thequve.com/api/v1/"
+        static let baseURL = "https://www.thequve.com/api/v1"
     }
 }
 
