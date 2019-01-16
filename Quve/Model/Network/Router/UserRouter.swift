@@ -37,7 +37,7 @@ extension UserRouter: APIConfiguration {
         case .login:
             return "/user/login/"
         case .facebook:
-            return "/user/facebook/"
+            return "/user/login/facebook/"
         case .register:
             return "/user/register/"
         case .info:

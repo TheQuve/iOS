@@ -69,26 +69,29 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
             .disposed(by: disposeBag)
     }
     
+    private func loginByFacebook(_ accessToken: (grantedPermissions: Set<Permission>, declinedPermissions: Set<Permission>, token: AccessToken)) {
+        APIClient.facebook(accessToken: accessToken.token.authenticationToken, completion: { (result) in
+            switch result {
+            case .success(let userData):
+                let token = userData.token
+                self.ud.setValue(token, forKey: "token")
+                self.ud.synchronize()
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        })
+    }
+    
     @objc private func facebookLoginButtonAction() {
         let facebookManager = LoginManager()
         facebookManager.logIn(readPermissions: [.publicProfile], viewController: self) { loginResult in
             switch loginResult {
+            case .success(let accessToken):
+                self.loginByFacebook(accessToken)
             case .failed(let error):
                 print(error)
             case .cancelled:
                 print("User cancelled login.")
-            case .success(let accessToken):
-                APIClient.facebook(accessToken: accessToken.token.authenticationToken, completion: { (result) in
-                    switch result {
-                    case .success(let userData):
-                        let token = userData.token
-                        self.ud.setValue(token, forKey: "token")
-                        self.ud.synchronize()
-                        print(userData.token)
-                    case .failure(let error):
-                        print(error.localizedDescription)
-                    }
-                })
             }
         }
     }
