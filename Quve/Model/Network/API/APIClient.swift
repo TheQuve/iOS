@@ -32,15 +32,27 @@ class APIClient {
         Manager.request(
             UserRouter.login(username: username, password: password))
             .responseData { (response) in
-            let decoder = JSONDecoder()
-            let userData: Result<LoginModel> = decoder.decodeResponse(from: response)
-            completion(userData)
+                let decoder = JSONDecoder()
+                let userData: Result<LoginModel> = decoder.decodeResponse(from: response)
+                completion(userData)
         }
     }
     
+    // Facebook Login API
     static func facebook(accessToken: String, completion: @escaping (Result<LoginModel>) -> ()) {
         Manager.request(
             UserRouter.facebook(accessToken: accessToken))
+            .responseData { (response) in
+                let decoder = JSONDecoder()
+                let userData: Result<LoginModel> = decoder.decodeResponse(from: response)
+                completion(userData)
+        }
+    }
+    
+    // SignUp API
+    static func register(username: String, password: String, completion: @escaping (Result<LoginModel>) -> ()) {
+        Manager.request(
+            UserRouter.register(username: username, password: password))
             .responseData { (response) in
                 let decoder = JSONDecoder()
                 let userData: Result<LoginModel> = decoder.decodeResponse(from: response)
@@ -52,9 +64,9 @@ class APIClient {
         Manager.request(
             QuestionRouter.getQuestionList(start: start, limit: limit))
             .responseData { (response) in
-            let decoder = JSONDecoder()
-            let questionData: Result<QuestionModel> = decoder.decodeResponse(from: response)
-            completion(questionData)
+                let decoder = JSONDecoder()
+                let questionData: Result<QuestionModel> = decoder.decodeResponse(from: response)
+                completion(questionData)
         }
     }
     
