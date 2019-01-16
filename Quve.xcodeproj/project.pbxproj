@@ -21,6 +21,7 @@
 		BC0CEE8221EE23BA001FE7D6 /* CategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE8121EE23BA001FE7D6 /* CategoryRouter.swift */; };
 		BC0CEE8421EE251A001FE7D6 /* QuestionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE8321EE251A001FE7D6 /* QuestionRouter.swift */; };
 		BC0CEE8621EE54E7001FE7D6 /* Extension+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE8521EE54E7001FE7D6 /* Extension+JSON.swift */; };
+		BC0CEE8921EF3287001FE7D6 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE8821EF3287001FE7D6 /* QuestionModel.swift */; };
 		BC2C2F7121DDEF2B002DF130 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2C2F7021DDEF2B002DF130 /* Login.storyboard */; };
 		BC2C2F7421DDF3FB002DF130 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C2F7321DDF3FB002DF130 /* SignInViewController.swift */; };
 		BC3896D321BB5FF0003328E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3896D221BB5FF0003328E7 /* AppDelegate.swift */; };
@@ -97,6 +98,7 @@
 		BC0CEE8121EE23BA001FE7D6 /* CategoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRouter.swift; sourceTree = "<group>"; };
 		BC0CEE8321EE251A001FE7D6 /* QuestionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRouter.swift; sourceTree = "<group>"; };
 		BC0CEE8521EE54E7001FE7D6 /* Extension+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+JSON.swift"; sourceTree = "<group>"; };
+		BC0CEE8821EF3287001FE7D6 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		BC2C2F7021DDEF2B002DF130 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		BC2C2F7321DDF3FB002DF130 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BC3896CF21BB5FF0003328E7 /* Quve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quve.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +222,14 @@
 				BC0CEE8321EE251A001FE7D6 /* QuestionRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		BC0CEE8721EF326C001FE7D6 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				BC0CEE8821EF3287001FE7D6 /* QuestionModel.swift */,
+			);
+			path = Question;
 			sourceTree = "<group>";
 		};
 		BC2C2F7221DDF3E0002DF130 /* Login */ = {
@@ -346,6 +356,7 @@
 		BCB6C97521C3FF5600BCEDC2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BC0CEE8721EF326C001FE7D6 /* Question */,
 				BC0CEE7921EC89DF001FE7D6 /* User */,
 				BC0CEE6B21EB7C2E001FE7D6 /* Network */,
 			);
@@ -761,6 +772,7 @@
 				BC0CEE8021EE07B9001FE7D6 /* APIClient.swift in Sources */,
 				BC0CEE6F21EC6F61001FE7D6 /* APIService.swift in Sources */,
 				BCF0613721CCC4F9004237EE /* NotificationViewController.swift in Sources */,
+				BC0CEE8921EF3287001FE7D6 /* QuestionModel.swift in Sources */,
 				BC0CEE7621EC8900001FE7D6 /* InfoModel.swift in Sources */,
 				BCF0613521CCC4EE004237EE /* AnswerViewController.swift in Sources */,
 				BC6EF58F21C7C5D9003456FB /* HomeChildViewController.swift in Sources */,

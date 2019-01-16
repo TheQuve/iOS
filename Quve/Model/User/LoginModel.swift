@@ -9,8 +9,8 @@
 import Foundation
 
 struct LoginModel: Codable {
-    let user: InfoModel?
     let token: String?
+    let user: InfoModel?
 }
 
 extension LoginModel {

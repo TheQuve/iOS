@@ -9,49 +9,28 @@
 import Alamofire
 
 enum CategoryRouter {
-    case login(username: String, password: String)
-    case facebook(token: String)
-    case register(username: String, password: String)
-    case info(token: String)
+    case categoryList
 }
 
 extension CategoryRouter: APIConfiguration {
     
     var method: HTTPMethod {
         switch self {
-        case .login:
-            return .post
-        case .facebook:
-            return .post
-        case .register:
-            return .post
-        case .info:
+        case .categoryList:
             return .get
         }
     }
     
     var path: String {
         switch self {
-        case .login:
-            return "/user/login/"
-        case .facebook:
-            return "/user/facebook"
-        case .register:
-            return "/user/register"
-        case .info:
-            return "/user/info"
+        case .categoryList:
+            return "/category/category_list/"
         }
     }
     
     var parameters: Parameters? {
         switch self {
-        case .login(let username, let password):
-            return ["username": username, "password": password]
-        case .facebook:
-            return nil
-        case .register(let username, let password):
-            return ["username": username, "password": password]
-        case .info:
+        case .categoryList:
             return nil
         }
     }
@@ -62,13 +41,15 @@ extension CategoryRouter: APIConfiguration {
         
         urlRequest.httpMethod = method.rawValue
         
-        //        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
-        //        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
-        //
+        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
+        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
+        if let token = UserDefaults.standard.string(forKey: "token") {
+            urlRequest.setValue(token, forHTTPHeaderField: HTTPHeaderField.authentication.rawValue)
+        }
+        
         if let parameters = parameters {
             do {
                 urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
-                print("파라미터")
             } catch {
                 throw AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error))
             }

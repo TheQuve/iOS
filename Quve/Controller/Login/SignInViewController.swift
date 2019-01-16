@@ -22,6 +22,8 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var facebookLoginButton: UIButton!
     
+    let ud = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance()?.uiDelegate = self
@@ -75,8 +77,18 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
                 print(error)
             case .cancelled:
                 print("User cancelled login.")
-            case .success(let grantedPermissions, let declinedPermissions, let accessToken):
-                print(accessToken)
+            case .success(let accessToken):
+                APIClient.facebook(accessToken: accessToken.token.authenticationToken, completion: { (result) in
+                    switch result {
+                    case .success(let userData):
+                        let token = userData.token
+                        self.ud.setValue(token, forKey: "token")
+                        self.ud.synchronize()
+                        print(userData.token)
+                    case .failure(let error):
+                        print(error.localizedDescription)
+                    }
+                })
             }
         }
     }
@@ -87,22 +99,13 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
         APIClient.login(username: email!, password: password!) { (result) in
             switch result {
             case .success(let userData):
-                print(userData.token!)
+                guard let token = userData.token else { return }
+                print(token)
+                self.ud.setValue(token, forKey: "token")
+                self.ud.synchronize()
             case .failure(let error):
                 print(error.localizedDescription)
             }
-        }
-    }
-}
-
-extension SignInViewController: URLSessionDelegate {
-    func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-        if (challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodClientCertificate) {
-            completionHandler(.rejectProtectionSpace, nil)
-        }
-        if (challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust) {
-            let credential = URLCredential(trust: challenge.protectionSpace.serverTrust!)
-            completionHandler(.useCredential, credential)
         }
     }
 }

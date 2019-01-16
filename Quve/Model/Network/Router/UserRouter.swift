@@ -7,10 +7,12 @@
 //
 
 import Alamofire
+import FacebookCore
+import FacebookLogin
 
 enum UserRouter {
     case login(username: String, password: String)
-    case facebook(token: String)
+    case facebook(accessToken: String)
     case register(username: String, password: String)
     case info(token: String)
 }
@@ -35,11 +37,11 @@ extension UserRouter: APIConfiguration {
         case .login:
             return "/user/login/"
         case .facebook:
-            return "/user/facebook"
+            return "/user/facebook/"
         case .register:
-            return "/user/register"
+            return "/user/register/"
         case .info:
-            return "/user/info"
+            return "/user/info/"
         }
     }
     
@@ -47,8 +49,8 @@ extension UserRouter: APIConfiguration {
         switch self {
         case .login(let username, let password):
             return ["username": username, "password": password]
-        case .facebook:
-            return nil
+        case .facebook(let accessToken):
+            return ["access_token": accessToken]
         case .register(let username, let password):
             return ["username": username, "password": password]
         case .info:
@@ -64,7 +66,7 @@ extension UserRouter: APIConfiguration {
 
         urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
         urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
-
+        
         if let parameters = parameters {
             do {
                 urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
