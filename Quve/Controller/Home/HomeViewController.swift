@@ -17,6 +17,15 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         super.viewDidLoad()
         setButtonBarView()
         setCurrentButtonBarItem()
+        APIClient.getQuestionList(start: 0, limit: 20) { (result) in
+            switch result {
+            case .success(let data):
+                print(data.data)
+                print("=====")
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     fileprivate func setNavigationBar(){

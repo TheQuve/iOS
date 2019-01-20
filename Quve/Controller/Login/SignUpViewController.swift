@@ -26,7 +26,7 @@ class SignUpViewController: UIViewController {
             APIClient.register(username: username, password: password) { (result) in
                 switch result {
                 case .success(let userData):
-                    print(userData.token)
+                    self.navigationController?.popViewController(animated: true)
                 case .failure(let error):
                     print(error.localizedDescription)
                 }

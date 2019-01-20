@@ -21,6 +21,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var facebookLoginButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
     
     private let ud = UserDefaults.standard
     
@@ -29,6 +30,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance()?.uiDelegate = self
         facebookLoginButton.addTarget(self, action: #selector(facebookLoginButtonAction), for: .touchUpInside)
         loginButton.addTarget(self, action: #selector(pressLoginButton(_:)), for: .touchUpInside)
+        signupButton.addTarget(self, action: #selector(pressSignUpButton(_:)), for: .touchUpInside)
         addValidations()
     }
     
@@ -39,6 +41,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
                 let token = userData.token
                 self.ud.setValue(token, forKey: "token")
                 self.ud.synchronize()
+                self.gotoMain()
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -68,10 +71,22 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
                 guard let token = userData.token else { return }
                 self.ud.setValue(token, forKey: "token")
                 self.ud.synchronize()
+                self.gotoMain()
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
+    }
+    
+    @objc private func pressSignUpButton(_ sender: UIButton) {
+        let signupVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        navigationController?.pushViewController(signupVC, animated: true)
+    }
+    
+    private func gotoMain() {
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let tabbarVC = main.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
+        UIApplication.shared.keyWindow?.rootViewController = tabbarVC
     }
 }
 

@@ -60,12 +60,12 @@ class APIClient {
         }
     }
     
-    static func getQuestionList(start: Int, limit: Int, completion: @escaping (Result<QuestionModel>) -> ()) {
+    static func getQuestionList(start: Int, limit: Int, completion: @escaping (Result<Questions>) -> ()) {
         Manager.request(
             QuestionRouter.getQuestionList(start: start, limit: limit))
             .responseData { (response) in
                 let decoder = JSONDecoder()
-                let questionData: Result<QuestionModel> = decoder.decodeResponse(from: response)
+                let questionData: Result<Questions> = decoder.decodeResponse(from: response)
                 completion(questionData)
         }
     }

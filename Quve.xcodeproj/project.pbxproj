@@ -21,7 +21,8 @@
 		BC0CEE8221EE23BA001FE7D6 /* CategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE8121EE23BA001FE7D6 /* CategoryRouter.swift */; };
 		BC0CEE8421EE251A001FE7D6 /* QuestionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE8321EE251A001FE7D6 /* QuestionRouter.swift */; };
 		BC0CEE8621EE54E7001FE7D6 /* Extension+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE8521EE54E7001FE7D6 /* Extension+JSON.swift */; };
-		BC0CEE8921EF3287001FE7D6 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEE8821EF3287001FE7D6 /* QuestionModel.swift */; };
+		BC18F0C121F4C05F00CA6CAF /* LoginActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18F0C021F4C05F00CA6CAF /* LoginActionSheet.swift */; };
+		BC18F0C321F4C06700CA6CAF /* LoginActionSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC18F0C221F4C06700CA6CAF /* LoginActionSheet.xib */; };
 		BC2C2F7121DDEF2B002DF130 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2C2F7021DDEF2B002DF130 /* Login.storyboard */; };
 		BC2C2F7421DDF3FB002DF130 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C2F7321DDF3FB002DF130 /* SignInViewController.swift */; };
 		BC3896D321BB5FF0003328E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3896D221BB5FF0003328E7 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		BC85D71921D8C14100562E9E /* AnswerTableListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85D71721D8C14100562E9E /* AnswerTableListCell.swift */; };
 		BC85D71A21D8C14100562E9E /* AnswerTableListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC85D71821D8C14100562E9E /* AnswerTableListCell.xib */; };
 		BC85D72021D91BC800562E9E /* HeaderTagTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85D71F21D91BC800562E9E /* HeaderTagTableCell.swift */; };
+		BCB38CA121F2D30100FFFDC4 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB38CA021F2D30100FFFDC4 /* Questions.swift */; };
 		BCB6C97921C4076700BCEDC2 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */; };
 		BCC14EEF21EF990E008032BC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC14EEE21EF990E008032BC /* SignUpViewController.swift */; };
 		BCD0FFD121D9339C00A5083C /* Extenion+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0FFD021D9339C00A5083C /* Extenion+CALayer.swift */; };
@@ -99,7 +101,8 @@
 		BC0CEE8121EE23BA001FE7D6 /* CategoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRouter.swift; sourceTree = "<group>"; };
 		BC0CEE8321EE251A001FE7D6 /* QuestionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRouter.swift; sourceTree = "<group>"; };
 		BC0CEE8521EE54E7001FE7D6 /* Extension+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+JSON.swift"; sourceTree = "<group>"; };
-		BC0CEE8821EF3287001FE7D6 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		BC18F0C021F4C05F00CA6CAF /* LoginActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginActionSheet.swift; sourceTree = "<group>"; };
+		BC18F0C221F4C06700CA6CAF /* LoginActionSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginActionSheet.xib; sourceTree = "<group>"; };
 		BC2C2F7021DDEF2B002DF130 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		BC2C2F7321DDF3FB002DF130 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BC3896CF21BB5FF0003328E7 /* Quve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quve.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +133,7 @@
 		BC85D71721D8C14100562E9E /* AnswerTableListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableListCell.swift; sourceTree = "<group>"; };
 		BC85D71821D8C14100562E9E /* AnswerTableListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerTableListCell.xib; sourceTree = "<group>"; };
 		BC85D71F21D91BC800562E9E /* HeaderTagTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTagTableCell.swift; sourceTree = "<group>"; };
+		BCB38CA021F2D30100FFFDC4 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
 		BCB6C97A21C4082800BCEDC2 /* Quve-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quve-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCC14EEE21EF990E008032BC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -229,9 +233,18 @@
 		BC0CEE8721EF326C001FE7D6 /* Question */ = {
 			isa = PBXGroup;
 			children = (
-				BC0CEE8821EF3287001FE7D6 /* QuestionModel.swift */,
+				BCB38CA021F2D30100FFFDC4 /* Questions.swift */,
 			);
 			path = Question;
+			sourceTree = "<group>";
+		};
+		BC18F0BF21F4C03000CA6CAF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BC18F0C021F4C05F00CA6CAF /* LoginActionSheet.swift */,
+				BC18F0C221F4C06700CA6CAF /* LoginActionSheet.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		BC2C2F7221DDF3E0002DF130 /* Login */ = {
@@ -331,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF0613F21CCC54D004237EE /* Storyboard */,
+				BC18F0BF21F4C03000CA6CAF /* Login */,
 				BC85D71521D8C03F00562E9E /* Home */,
 				BC85D71621D8C04800562E9E /* Answer */,
 			);
@@ -579,6 +593,7 @@
 				BC3896D821BB5FF0003328E7 /* Main.storyboard in Resources */,
 				BCF0614721CCC61E004237EE /* Notification.storyboard in Resources */,
 				BC2C2F7121DDEF2B002DF130 /* Login.storyboard in Resources */,
+				BC18F0C321F4C06700CA6CAF /* LoginActionSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +770,7 @@
 				BC66A5ED21C428D100E1C83B /* SignalClient.swift in Sources */,
 				BCB6C97921C4076700BCEDC2 /* WebRTCClient.swift in Sources */,
 				BC0CEE8421EE251A001FE7D6 /* QuestionRouter.swift in Sources */,
+				BCB38CA121F2D30100FFFDC4 /* Questions.swift in Sources */,
 				BC0CEE7421EC86DD001FE7D6 /* APIConfiguration.swift in Sources */,
 				BC0CEE7B21EC8A63001FE7D6 /* RegisterModel.swift in Sources */,
 				BC66A5F321C42AC600E1C83B /* RTCSessionDescription+JSON.swift in Sources */,
@@ -774,9 +790,9 @@
 				BCD0FFD121D9339C00A5083C /* Extenion+CALayer.swift in Sources */,
 				BC0CEE8021EE07B9001FE7D6 /* APIClient.swift in Sources */,
 				BC0CEE6F21EC6F61001FE7D6 /* APIService.swift in Sources */,
+				BC18F0C121F4C05F00CA6CAF /* LoginActionSheet.swift in Sources */,
 				BCF0613721CCC4F9004237EE /* NotificationViewController.swift in Sources */,
 				BCC14EEF21EF990E008032BC /* SignUpViewController.swift in Sources */,
-				BC0CEE8921EF3287001FE7D6 /* QuestionModel.swift in Sources */,
 				BC0CEE7621EC8900001FE7D6 /* InfoModel.swift in Sources */,
 				BCF0613521CCC4EE004237EE /* AnswerViewController.swift in Sources */,
 				BC6EF58F21C7C5D9003456FB /* HomeChildViewController.swift in Sources */,

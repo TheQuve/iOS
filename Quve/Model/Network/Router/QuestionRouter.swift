@@ -50,15 +50,14 @@ extension QuestionRouter: APIConfiguration {
     }
 
     func asURLRequest() throws -> URLRequest {
-        let url = try APIService.ProductionServer.baseURL.asURL()
-        var urlRequest = URLRequest(url: url.appendingPathComponent(path))
-
+        let url = try (APIService.ProductionServer.baseURL + path).asURL()
+        var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue
 
         urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
         urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
         if let token = UserDefaults.standard.string(forKey: "token") {
-            urlRequest.setValue(token, forHTTPHeaderField: HTTPHeaderField.authentication.rawValue)
+            urlRequest.setValue("token " + token, forHTTPHeaderField: HTTPHeaderField.authentication.rawValue)
         }
         
         if let parameters = parameters {
