@@ -8,9 +8,10 @@
 //
 import Alamofire
 
+
 enum QuestionRouter {
     case getQuestionList(start: Int, limit: Int)
-    case question(title: String, contents: String, is_completed: Bool)
+    case question(title: String, category: Int, contents: String, point: Int, limit: Int, user_class: String, region: String, is_open: Bool, is_completed: Bool)
     case getQuestion(question_id: Int)
 }
 
@@ -42,8 +43,16 @@ extension QuestionRouter: APIConfiguration {
         switch self {
         case .getQuestionList:
             return nil
-        case .question(let title, let contents, let is_completed):
-            return ["title": title, "contents": contents, "is_completed": is_completed]
+        case .question(let title, let category, let contents, let point, let limit, let user_class, let region, let is_open, let is_completed):
+            return ["title": title,
+                    "category": category,
+                    "contents": contents,
+                    "point": point,
+                    "limit": limit,
+                    "user_class": user_class,
+                    "region": region,
+                    "is_open": is_open,
+                    "is_completed": is_completed]
         case .getQuestion:
             return nil
         }

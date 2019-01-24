@@ -8,6 +8,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SpoqaHanSans-Bold.ttf">
+            <string>SpoqaHanSans-Bold</string>
+        </array>
+        <array key="SpoqaHanSans-Regular.ttf">
+            <string>SpoqaHanSans-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Sign In View Controller-->
         <scene sceneID="fSw-RO-0mq">
@@ -17,42 +25,171 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LBU-Q1-w6E">
-                                <rect key="frame" x="62" y="196" width="199" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3fY-1K-hby">
-                                <rect key="frame" x="62" y="244" width="199" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FS1-qX-PUn">
-                                <rect key="frame" x="133" y="403" width="108" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="이메일로 가입하기"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FS1-qX-PUn">
+                                <rect key="frame" x="134" y="415" width="107" height="33"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Bold" family="SpoqaHanSans" pointSize="14"/>
+                                <state key="normal" title="이메일로 가입하기">
+                                    <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOk-9R-1Kp">
-                                <rect key="frame" x="158" y="471" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="페이스북"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITi-D1-2YW">
+                                <rect key="frame" x="68" y="352" width="239" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ITi-D1-2YW" secondAttribute="height" multiplier="239:49" id="3uu-N9-PcV"/>
+                                </constraints>
+                                <state key="normal" image="btnLogin"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITi-D1-2YW">
-                                <rect key="frame" x="62" y="295" width="199" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="로그인"/>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kef-4B-cCM" customClass="GIDSignInButton">
-                                <rect key="frame" x="23" y="342" width="328" height="53"/>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kef-4B-cCM" customClass="GIDSignInButton">
+                                <rect key="frame" x="29" y="558" width="328" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zla-6d-ul9">
+                                <rect key="frame" x="22" y="198" width="331" height="131"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tM2-wj-tmt">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="55.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mm-Xc-RHp">
+                                                <rect key="frame" x="0.0" y="0.0" width="331" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
+                                                <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5jz-Ki-xd1">
+                                                <rect key="frame" x="0.0" y="29.5" width="331" height="26"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="knc-eI-xC8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="213" height="15"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconEmail" translatesAutoresizingMaskIntoConstraints="NO" id="JuA-3U-LHD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="15"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="15" id="1BI-2n-lzh"/>
+                                                                    <constraint firstAttribute="width" secondItem="JuA-3U-LHD" secondAttribute="height" multiplier="4:3" id="AGb-1E-GdQ"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일 주소를 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LBU-Q1-w6E">
+                                                                <rect key="frame" x="35" y="0.0" width="178" height="15"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GN7-RE-11l">
+                                                        <rect key="frame" x="0.0" y="25" width="240" height="1"/>
+                                                        <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="pXj-l1-Sdu"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oM2-6A-gpk">
+                                        <rect key="frame" x="0.0" y="72.5" width="331" height="58.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwd-La-l8C">
+                                                <rect key="frame" x="0.0" y="0.0" width="331" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
+                                                <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Z6-IY-fZf">
+                                                <rect key="frame" x="0.0" y="29.5" width="331" height="29"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="q2u-sh-d5Y">
+                                                        <rect key="frame" x="0.0" y="0.0" width="192.5" height="18"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPassword" translatesAutoresizingMaskIntoConstraints="NO" id="hyO-Xa-gzn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="hyO-Xa-gzn" secondAttribute="height" multiplier="1:1" id="W2J-LD-u8v"/>
+                                                                    <constraint firstAttribute="height" constant="18" id="zYp-Fi-fsC"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호를 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3fY-1K-hby">
+                                                                <rect key="frame" x="33" y="0.0" width="159.5" height="18"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVm-iY-uCk">
+                                                        <rect key="frame" x="0.0" y="28" width="240" height="1"/>
+                                                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="sAT-vv-795"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="eB3-5Y-aIk">
+                                <rect key="frame" x="17.5" y="456" width="340" height="21"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yo7-c4-cec">
+                                        <rect key="frame" x="0.0" y="10" width="143" height="1"/>
+                                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="oCk-tI-Rd7"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="또는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJ8-7m-Clt">
+                                        <rect key="frame" x="158" y="1" width="24" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
+                                        <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mI8-Ce-VzH">
+                                        <rect key="frame" x="197" y="10" width="143" height="1"/>
+                                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="S7c-oc-aWr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mI8-Ce-VzH" firstAttribute="leading" secondItem="eB3-5Y-aIk" secondAttribute="leading" constant="197" id="HbN-7a-3Uh"/>
+                                    <constraint firstItem="mI8-Ce-VzH" firstAttribute="width" secondItem="yo7-c4-cec" secondAttribute="width" id="lbe-vi-egX"/>
+                                    <constraint firstItem="yo7-c4-cec" firstAttribute="top" secondItem="eB3-5Y-aIk" secondAttribute="top" constant="10" id="nhQ-EM-1q3"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="HTx-AB-1pe">
+                                <rect key="frame" x="123" y="492" width="129" height="54"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOk-9R-1Kp">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                                        <state key="normal" image="btnFacebook"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfs-hY-bLA">
+                                        <rect key="frame" x="75" y="0.0" width="54" height="54"/>
+                                        <state key="normal" image="btnGoogle"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HTx-AB-1pe" firstAttribute="top" secondItem="eB3-5Y-aIk" secondAttribute="bottom" constant="15" id="5tq-Qg-pDb"/>
+                            <constraint firstItem="ITi-D1-2YW" firstAttribute="top" secondItem="Zla-6d-ul9" secondAttribute="bottom" constant="23" id="5x3-qk-Alg"/>
+                            <constraint firstItem="ITi-D1-2YW" firstAttribute="centerX" secondItem="Ux9-9Z-fQZ" secondAttribute="centerX" id="7l4-Uf-26E"/>
+                            <constraint firstItem="FS1-qX-PUn" firstAttribute="top" secondItem="ITi-D1-2YW" secondAttribute="bottom" constant="14" id="HId-I0-O9L"/>
+                            <constraint firstItem="eB3-5Y-aIk" firstAttribute="centerX" secondItem="Ux9-9Z-fQZ" secondAttribute="centerX" id="HkN-1n-qql"/>
+                            <constraint firstItem="FS1-qX-PUn" firstAttribute="centerX" secondItem="ITi-D1-2YW" secondAttribute="centerX" id="PBV-YS-i04"/>
+                            <constraint firstItem="eB3-5Y-aIk" firstAttribute="top" secondItem="FS1-qX-PUn" secondAttribute="bottom" constant="8" id="bJI-Z2-bYh"/>
+                            <constraint firstItem="HTx-AB-1pe" firstAttribute="centerX" secondItem="Ux9-9Z-fQZ" secondAttribute="centerX" id="brK-ZW-ZcN"/>
+                            <constraint firstItem="Zla-6d-ul9" firstAttribute="leading" secondItem="2cz-sF-PHM" secondAttribute="leading" constant="22" id="cKf-aZ-JGS"/>
+                            <constraint firstItem="Zla-6d-ul9" firstAttribute="centerX" secondItem="Ux9-9Z-fQZ" secondAttribute="centerX" id="hao-yr-Scd"/>
+                            <constraint firstItem="Zla-6d-ul9" firstAttribute="centerY" secondItem="Ux9-9Z-fQZ" secondAttribute="centerY" constant="-70" id="j0p-KW-R4W"/>
+                            <constraint firstItem="eB3-5Y-aIk" firstAttribute="leading" secondItem="2cz-sF-PHM" secondAttribute="leading" constant="17.5" id="s7J-dx-afY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2cz-sF-PHM"/>
                     </view>
                     <navigationItem key="navigationItem" id="81G-tS-SqL"/>
@@ -157,4 +294,11 @@
             <point key="canvasLocation" x="52" y="-172.26386806596702"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btnFacebook" width="54" height="54"/>
+        <image name="btnGoogle" width="54" height="54"/>
+        <image name="btnLogin" width="239" height="49"/>
+        <image name="iconEmail" width="20" height="15"/>
+        <image name="iconPassword" width="18" height="19"/>
+    </resources>
 </document>

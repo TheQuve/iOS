@@ -32,7 +32,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Lb-um-HVd">
-                    <rect key="frame" x="68" y="101.5" width="239" height="108"/>
+                    <rect key="frame" x="68" y="99.5" width="239" height="108"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKx-lG-ofe">
                             <rect key="frame" x="0.0" y="0.0" width="239" height="49"/>
@@ -49,30 +49,30 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Z2-4h-xO3">
-                    <rect key="frame" x="132" y="220.5" width="111" height="36"/>
+                    <rect key="frame" x="132" y="218.5" width="111" height="36"/>
                     <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
                     <state key="normal" title="등록한 계정 찾기">
                         <color key="titleColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XXJ-DY-koB">
-                    <rect key="frame" x="17.5" y="265.5" width="340" height="19.5"/>
+                    <rect key="frame" x="17.5" y="263.5" width="340" height="21.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YI3-u8-RPL">
-                            <rect key="frame" x="0.0" y="9.5" width="143" height="1"/>
+                            <rect key="frame" x="0.0" y="10.5" width="143" height="1"/>
                             <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="LJI-uR-AJR"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="또는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvM-sK-eSf">
-                            <rect key="frame" x="158" y="0.0" width="24" height="19.5"/>
+                            <rect key="frame" x="158" y="1" width="24" height="19.5"/>
                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
                             <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jf-r9-pUT">
-                            <rect key="frame" x="197" y="9.5" width="143" height="1"/>
+                            <rect key="frame" x="197" y="10.5" width="143" height="1"/>
                             <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="Txv-ON-oW8"/>
@@ -110,7 +110,7 @@
                 <constraint firstItem="3Lb-um-HVd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="SXW-Me-pWh"/>
                 <constraint firstItem="3Lb-um-HVd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UgI-Vf-L5R"/>
                 <constraint firstItem="Q4g-yb-8dL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YoH-VK-WoB"/>
-                <constraint firstItem="3Lb-um-HVd" firstAttribute="top" secondItem="zHh-Es-D4r" secondAttribute="bottom" constant="22" id="geI-nL-KdT"/>
+                <constraint firstItem="3Lb-um-HVd" firstAttribute="top" secondItem="zHh-Es-D4r" secondAttribute="bottom" constant="20" id="geI-nL-KdT"/>
                 <constraint firstItem="XXJ-DY-koB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kxZ-ES-C0g"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

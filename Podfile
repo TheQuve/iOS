@@ -12,6 +12,7 @@ target 'Quve' do
   pod 'Starscream'
   pod 'XLPagerTabStrip'
   pod 'Alamofire'
+  pod 'IQKeyboardManagerSwift'
   
   # SNS Login
   pod 'GoogleSignIn'

@@ -31,7 +31,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
         facebookLoginButton.addTarget(self, action: #selector(facebookLoginButtonAction), for: .touchUpInside)
         loginButton.addTarget(self, action: #selector(pressLoginButton(_:)), for: .touchUpInside)
         signupButton.addTarget(self, action: #selector(pressSignUpButton(_:)), for: .touchUpInside)
-        addValidations()
+//        addValidations()
     }
     
     private func loginByFacebook(_ accessToken: (grantedPermissions: Set<Permission>, declinedPermissions: Set<Permission>, token: AccessToken)) {
@@ -70,6 +70,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
             case .success(let userData):
                 guard let token = userData.token else { return }
                 self.ud.setValue(token, forKey: "token")
+                print(userData.token)
                 self.ud.synchronize()
                 self.gotoMain()
             case .failure(let error):

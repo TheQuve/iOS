@@ -70,7 +70,10 @@ class APIClient {
         }
     }
     
-//    static func question(title: String, contents: String, is_completed: Bool, completion: @escaping (Result<>) -> ()) {
-//        
-//    }
+    static func question(title: String, category: Int, contents: String, point: Int, limit: Int, user_class: String, region: String, is_open: Bool, is_completed: Bool, completion: @escaping (Result<>) -> ()) {
+        Manager.request(QuestionRouter.question(title: title, category: category, contents: contents, point: point, limit: limit, user_class: user_class, region: region, is_open: is_open, is_completed: is_completed)).responseData { (response) in
+            let decoder = JSONDecoder()
+            let 
+        }
+    }
 }

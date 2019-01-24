@@ -21,7 +21,6 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
             switch result {
             case .success(let data):
                 print(data.data)
-                print("=====")
             case .failure(let error):
                 print(error.localizedDescription)
             }

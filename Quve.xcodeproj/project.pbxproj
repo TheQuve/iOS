@@ -47,6 +47,7 @@
 		BC85D71921D8C14100562E9E /* AnswerTableListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85D71721D8C14100562E9E /* AnswerTableListCell.swift */; };
 		BC85D71A21D8C14100562E9E /* AnswerTableListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC85D71821D8C14100562E9E /* AnswerTableListCell.xib */; };
 		BC85D72021D91BC800562E9E /* HeaderTagTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85D71F21D91BC800562E9E /* HeaderTagTableCell.swift */; };
+		BC9432FD21FA160B00597B47 /* AnswerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9432FC21FA160B00597B47 /* AnswerDetailViewController.swift */; };
 		BCB38CA121F2D30100FFFDC4 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB38CA021F2D30100FFFDC4 /* Questions.swift */; };
 		BCB6C97921C4076700BCEDC2 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */; };
 		BCC14EEF21EF990E008032BC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC14EEE21EF990E008032BC /* SignUpViewController.swift */; };
@@ -133,6 +134,7 @@
 		BC85D71721D8C14100562E9E /* AnswerTableListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableListCell.swift; sourceTree = "<group>"; };
 		BC85D71821D8C14100562E9E /* AnswerTableListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerTableListCell.xib; sourceTree = "<group>"; };
 		BC85D71F21D91BC800562E9E /* HeaderTagTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTagTableCell.swift; sourceTree = "<group>"; };
+		BC9432FC21FA160B00597B47 /* AnswerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerDetailViewController.swift; sourceTree = "<group>"; };
 		BCB38CA021F2D30100FFFDC4 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
 		BCB6C97A21C4082800BCEDC2 /* Quve-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quve-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -292,7 +294,6 @@
 				BCB6C97521C3FF5600BCEDC2 /* Model */,
 				BC66A60421C4D88D00E1C83B /* View */,
 				BCB6C97721C3FF6000BCEDC2 /* Controller */,
-				BC3896DE21BB5FF3003328E7 /* LaunchScreen.storyboard */,
 				BC3896D921BB5FF0003328E7 /* Quve.xcdatamodeld */,
 				BCB6C97821C4076700BCEDC2 /* WebRTCClient.swift */,
 				BC66A5EC21C428D100E1C83B /* SignalClient.swift */,
@@ -417,6 +418,7 @@
 			children = (
 				BCF0613421CCC4EE004237EE /* AnswerViewController.swift */,
 				BCD0FFD221DA477F00A5083C /* FilterViewController.swift */,
+				BC9432FC21FA160B00597B47 /* AnswerDetailViewController.swift */,
 			);
 			path = Answer;
 			sourceTree = "<group>";
@@ -453,6 +455,7 @@
 				BCF0614221CCC5F1004237EE /* Answer.storyboard */,
 				BC3896D621BB5FF0003328E7 /* Main.storyboard */,
 				BC2C2F7021DDEF2B002DF130 /* Login.storyboard */,
+				BC3896DE21BB5FF3003328E7 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -722,6 +725,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -743,6 +747,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -763,6 +768,7 @@
 			files = (
 				BC0CEE7D21EC8A97001FE7D6 /* FacebookModel.swift in Sources */,
 				BC3896D521BB5FF0003328E7 /* HomeViewController.swift in Sources */,
+				BC9432FD21FA160B00597B47 /* AnswerDetailViewController.swift in Sources */,
 				BC3896DB21BB5FF0003328E7 /* Quve.xcdatamodeld in Sources */,
 				BCF0613121CCC21E004237EE /* TabBarController.swift in Sources */,
 				BC0CEE6A21EB5D7F001FE7D6 /* FacebookAuth.swift in Sources */,

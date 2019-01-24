@@ -16,16 +16,25 @@ class AnswerViewController: UIViewController {
         self.present(filterVC, animated: true, completion: nil)
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let nibName = UINib(nibName: "AnswerTableListCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "AnswerTableListCell")
+        setNavigationUI()
         tableView.delegate = self
         tableView.dataSource = self
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
+    private func setNavigationUI() {
+        self.navigationController?.navigationBar.backgroundColor = UIColor.white
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+    }
 }
 
 extension AnswerViewController: UITableViewDelegate, UITableViewDataSource {
@@ -53,5 +62,9 @@ extension AnswerViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "AnswerDetailViewController") as! AnswerDetailViewController
+        self.tabBarController?.tabBar.isHidden = true
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
